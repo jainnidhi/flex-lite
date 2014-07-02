@@ -50,7 +50,7 @@
         <?php if (get_theme_mod('flex_footer_footer_text') == '') { ?>
             <div class="smallprint">
                 <p>
-                    <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
+                    <a href="<?php $flex_theme = wp_get_theme(); echo $flex_theme->get( 'ThemeURI' ); ?>">
                         <?php _e('Flex WordPress theme by IdeaBox', 'flex'); ?>
                     </a>
                 </p>
