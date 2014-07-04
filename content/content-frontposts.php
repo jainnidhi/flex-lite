@@ -15,7 +15,7 @@ if (get_theme_mod('superb_front_featured_posts_check')) {
         $featured_count = intval(get_theme_mod('superb_front_featured_posts_count'));
     }
     else {
-        $featured_count = 2; 
+        $featured_count = 1; 
     }
     $var = get_theme_mod('superb_front_featured_posts_cat');
 

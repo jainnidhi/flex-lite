@@ -57,21 +57,6 @@ get_header();
                  </div>
             </li>
             
-            <li id="slider3">
-                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide3.jpg" alt=""/>
-               <div class="flex-caption">
-                   <div class="caption-content">
-                       <div class="caption-inner">
-                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'superb') ?></a></h2>
-                     <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'superb') ?> </p>
-                      <a class="slider-button" href="<?php if ( get_theme_mod('slider_three_link_url') !='' ) { echo esc_url(get_theme_mod('slider_three_link_url')); } ?>">
-                              <?php esc_html_e('Start Building Your Website Now', 'superb') ?>
-                        </a>
-                   </div>
-                   </div>
-                 </div>
-            </li>
-            
             <?php } ?>
             
              <?php 
@@ -99,54 +84,6 @@ get_header();
                 </li>
                 
                
-                  <?php
-                   // load second slide 
-                   if ( get_theme_mod('slider_two') !='' ) {  ?>
-                <li id="slider2">
-                    <img  src="<?php echo get_theme_mod('slider_two'); ?>" alt=""/>
-                    <?php if ( get_theme_mod('slider_title_two') !='' || get_theme_mod('slider_two_description') !='' ) {  ?>
-                    <div class="flex-caption">
-                        <div class="caption-content">
-                            <div class="caption-inner">
-                              <h2 class="slider-title"><?php echo esc_html(get_theme_mod('slider_title_two')); ?></h2>
-                            <p><?php echo esc_html(get_theme_mod('slider_two_description')); ?></p>
-                                
-                           <?php if ( get_theme_mod('slider_two_link_url') !='' && get_theme_mod('slider_two_link_text') !=''  ) {  ?>
-                            <a class="slider-button" href="<?php echo esc_url(get_theme_mod('slider_two_link_url')); ?>">
-                              <?php echo esc_html(get_theme_mod('slider_two_link_text')); ?>
-                                <?php } ?>
-                            </a>
-                        </div>
-                        </div>
-                     </div>
-                    <?php } ?>
-                </li>
-                   <?php } ?>
-                
-               
-                  <?php 
-                   // load third slide
-                   if ( get_theme_mod('slider_three') !='' ) {  ?>
-                <li id="slider3">
-                    <img  src="<?php echo get_theme_mod('slider_three'); ?>" alt=""/>
-                  <?php if ( get_theme_mod('slider_title_three') !='' || get_theme_mod('slider_three_description') !='' ) {  ?>
-                    <div class="flex-caption">
-                        <div class="caption-content">
-                            <div class="caption-inner">
-                              <h2 class="slider-title"><?php echo esc_html(get_theme_mod('slider_title_three')); ?></h2>
-                            <p><?php echo esc_html(get_theme_mod('slider_three_description')); ?></p>
-                                 
-                           <?php if ( get_theme_mod('slider_three_link_url') !='' && get_theme_mod('slider_three_link_text') !=''  ) {  ?>
-                            <a class="slider-button" href="<?php echo esc_url(get_theme_mod('slider_three_link_url')); ?>">
-                            <?php echo esc_html(get_theme_mod('slider_three_link_text')); ?>
-                                <?php } ?>
-                            </a>
-                        </div>
-                        </div>
-                     </div>
-                  <?php } ?>
-                </li>
-                   <?php } ?>
               
         <?php } ?>
             
@@ -312,31 +249,7 @@ get_header();
 
                           <?php } else {  ?> <h3><?php esc_html_e('Contact', 'superb') ?></h3>
                                    <?php } ?>
-                          <?php
-                        if (get_theme_mod('social_icons_check')) { ?>
-                          <div class="social-links">
-                                <ul>
-                                    <?php if (get_theme_mod('facebook_link_url')) { ?>
-                                        <li class="flex-fb"><a href="<?php echo get_theme_mod('facebook_link_url'); ?>"></a></li>
-                                    <?php } ?>
-                                    <?php if(get_theme_mod('twitter_link_url')) { ?>
-                                        <li class="flex-twitter"><a href="<?php echo  get_theme_mod('twitter_link_url'); ?>"></a></li>
-                                    <?php } ?>
-                                    <?php if(get_theme_mod('googleplus_link_url')) { ?>
-                                        <li class="flex-gplus"><a href="<?php echo get_theme_mod('googleplus_link_url'); ?>"></a></li>
-                                    <?php } ?>
-                                    <?php if( get_theme_mod('pinterest_link_url')) { ?>
-                                        <li class="flex-pinterest"><a href="<?php echo get_theme_mod('pinterest_link_url'); ?>"></a></li>
-                                    <?php } ?>
-                                    <?php if (get_theme_mod('github_link_url')) { ?>
-                                        <li class="flex-github"><a href="<?php echo get_theme_mod('github_link_url'); ?>"></a></li>
-                                    <?php } ?>
-                                    <?php if(get_theme_mod('youtube_link_url')) { ?>
-                                        <li class="flex-youtube"><a href="<?php echo get_theme_mod('youtube_link_url'); ?>"></a></li>
-                                    <?php } ?>
-                                </ul>
-                            </div>
-                        <?php } ?>
+                          
                       
                           <?php if ( get_theme_mod('address_detail') !='' ) {  ?>
                           <p id="address"><?php echo esc_html(get_theme_mod('address_detail')); ?></p>

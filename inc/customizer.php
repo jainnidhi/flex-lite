@@ -88,11 +88,6 @@ function superb_customize_register($wp_customize) {
             'blue' => __('Blue', 'superb'),
             'red' => __('Red', 'superb'),
             'green' => __('Green', 'superb'),
-            'purple' => __('Purple', 'superb'),
-            'orange' => __('Orange', 'superb'),
-            'brown' => __('Brown', 'superb'),
-            'pink' => __('Pink', 'superb'),
-            'yellow' => __('Yellow', 'superb'),
         ),
     ));
 
@@ -223,140 +218,6 @@ function superb_customize_register($wp_customize) {
         'section' => 'home_slider_setting',
         'settings' => 'slider_one_link_url',
         'priority' => 5,
-    ));
-
-    $wp_customize->add_setting('slider_two', array(
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control(
-            new WP_Customize_Image_Control(
-            $wp_customize, 'slider_two', array(
-        'label' => 'Slider 2',
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_two',
-        'priority' => 6,
-            )
-            )
-    );
-
-    // slider Title
-    $wp_customize->add_setting('slider_title_two', array(
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control('slider_title_two', array(
-        'label' => __('Slider Two Title', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_title_two',
-        'priority' => 7,
-    ));
-
-    $wp_customize->add_setting('slider_two_description', array('default' => '',
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'slider_two_description', array(
-        'label' => __('Description', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_two_description',
-        'priority' => 8,
-    )));
-
-    // link text
-    $wp_customize->add_setting('slider_two_link_text', array(
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control('slider_two_link_text', array(
-        'label' => __('Slider Two Link Text', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_two_link_text',
-        'priority' => 9,
-    ));
-
-    // link url
-    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'superb'),
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control('slider_two_link_url', array(
-        'label' => __('Slider Two Link URL', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_two_link_url',
-        'priority' => 10,
-    ));
-
-
-    $wp_customize->add_setting('slider_three', array(
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control(
-            new WP_Customize_Image_Control(
-            $wp_customize, 'slider_three', array(
-        'label' => 'Slider 3',
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_three',
-        'priority' => 11,
-            )
-            )
-    );
-
-
-    // slider Title
-    $wp_customize->add_setting('slider_title_three', array(
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control('slider_title_three', array(
-        'label' => __('Slider Three Title', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_title_three',
-        'priority' => 12,
-    ));
-
-    $wp_customize->add_setting('slider_three_description', array('default' => '',
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'slider_three_description', array(
-        'label' => __('Description', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_three_description',
-        'priority' => 13,
-    )));
-
-    // link text
-    $wp_customize->add_setting('slider_three_link_text', array(
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control('slider_three_link_text', array(
-        'label' => __('Slider Three Link Text', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_three_link_text',
-        'priority' => 14,
-    ));
-
-    // link url
-    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'superb'),
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport' => 'postMessage',
-    ));
-
-    $wp_customize->add_control('slider_three_link_url', array(
-        'label' => __('Slider Three Link URL', 'superb'),
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_three_link_url',
-        'priority' => 15,
     ));
 
     
@@ -729,7 +590,7 @@ function superb_customize_register($wp_customize) {
 
     // select number of posts for featured posts on front page
     $wp_customize->add_setting('superb_front_featured_posts_count', array(
-        'default' => 3,
+        'default' => 1,
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
@@ -860,20 +721,8 @@ function superb_customize_register($wp_customize) {
         'priority' => 5,
     )));
 
-    $wp_customize->add_setting('social_icons_check', array('default' => 0,
-        'sanitize_callback' => 'superb_sanitize_checkbox',
-    ));
 
-    $wp_customize->add_control('social_icons_check', array(
-        'label' => __('Show Social Icons', 'superb'),
-        'section' => 'contact_setting',
-        'priority' => 6,
-        'type' => 'checkbox',
-    ));
-
-
-
-    // Add new section for Home Tagline settings
+    // Add new section for Contact settings
     $wp_customize->add_section('superb_contact_form_setting', array(
         'title' => __('Contact Form', 'prism'),
         'priority' => 67,
