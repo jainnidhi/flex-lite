@@ -5,8 +5,8 @@
  * Description: Displays a full-width page, with no sidebar. This template is great for pages
  * containing large amounts of content.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 get_header(); ?>

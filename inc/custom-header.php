@@ -1,25 +1,25 @@
 <?php
 /**
- * Implement an optional custom header for Flex
+ * Implement an optional custom header for Superb
  *
  * See http://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
  * @subpackage Twenty_Twelve
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
 /**
  * Set up the WordPress core custom header arguments and settings.
  *
  * @uses add_theme_support() to register support for 3.4 and up.
- * @uses flex_header_style() to style front-end.
- * @uses flex_admin_header_style() to style wp-admin form.
- * @uses flex_admin_header_image() to add custom markup to wp-admin form.
+ * @uses superb_header_style() to style front-end.
+ * @uses superb_admin_header_style() to style wp-admin form.
+ * @uses superb_admin_header_image() to add custom markup to wp-admin form.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  */
-function flex_custom_header_setup() {
+function superb_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '000',
@@ -29,7 +29,7 @@ function flex_custom_header_setup() {
 		'height'                 => 300,
 		'width'                  => 800,
 
-		// Support Flexible height and width.
+		// Support Superbible height and width.
 		'flex-height'            => true,
 		'flex-width'             => true,
 
@@ -37,23 +37,23 @@ function flex_custom_header_setup() {
 		'random-default'         => false,
 
 		// Callbacks for styling the header and the admin preview.
-		'wp-head-callback'       => 'flex_header_style',
-		'admin-head-callback'    => 'flex_admin_header_style',
-		'admin-preview-callback' => 'flex_admin_header_image',
+		'wp-head-callback'       => 'superb_header_style',
+		'admin-head-callback'    => 'superb_admin_header_style',
+		'admin-preview-callback' => 'superb_admin_header_image',
 	);
 
 	add_theme_support( 'custom-header', $args );
 }
-add_action( 'after_setup_theme', 'flex_custom_header_setup' );
+add_action( 'after_setup_theme', 'superb_custom_header_setup' );
 
 /**
  * Style the header text displayed on the blog.
  *
  * get_header_textcolor() options: 515151 is default, hide text (returns 'blank'), or any hex value.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  */
-function flex_header_style() {
+function superb_header_style() {
 	$text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -89,9 +89,9 @@ function flex_header_style() {
 /**
  * Style the header image displayed on the Appearance > Header admin panel.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  */
-function flex_admin_header_style() {
+function superb_admin_header_style() {
 ?>
 	<style type="text/css" id="twentytwelve-admin-header-css">
 	.appearance_page_custom-header #headimg {
@@ -131,9 +131,9 @@ function flex_admin_header_style() {
  *
  * This callback overrides the default markup displayed there.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  */
-function flex_admin_header_image() {
+function superb_admin_header_image() {
 	?>
 	<div id="headimg">
 		<?php

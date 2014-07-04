@@ -2,8 +2,8 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 ?>
 
@@ -19,13 +19,13 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html( 'Pages:', 'flex' ),
+			'before' => '<div class="page-links">' . esc_html( 'Pages:', 'superb' ),
 			'after' => '</div>',
 			'link_before' => '<span class="page-numbers">',
 			'link_after' => '</span>'
 		) ); ?>
 	</div><!-- /.entry-content -->
 	<footer class="entry-meta">
-		<?php edit_post_link( esc_html( 'Edit', 'flex' ) . ' <i class="fa fa-angle-right"></i>', '<div class="edit-link">', '</div>' ); ?>
+		<?php edit_post_link( esc_html( 'Edit', 'superb' ) . ' <i class="fa fa-angle-right"></i>', '<div class="edit-link">', '</div>' ); ?>
 	</footer><!-- /.entry-meta -->
 </article><!-- /#post -->

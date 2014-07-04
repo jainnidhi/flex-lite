@@ -2,8 +2,8 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 get_header(); ?>
@@ -27,7 +27,7 @@ get_header(); ?>
 					}
 					?>
 
-					<?php flex_content_nav( 'nav-below' ); ?>
+					<?php superb_content_nav( 'nav-below' ); ?>
 
 				<?php endwhile; // end of the loop. ?>
                                 

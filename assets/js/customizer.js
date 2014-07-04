@@ -267,7 +267,7 @@
 		} );
 	} );
         
-         wp.customize( 'flex_footer_footer_text', function( value ) {
+         wp.customize( 'superb_footer_footer_text', function( value ) {
 		value.bind( function( to ) {
 			$( '.smallprint p' ).text( to );
 		} );

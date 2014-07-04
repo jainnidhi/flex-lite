@@ -4,11 +4,11 @@
  *
  * The area of the page that contains both current comments
  * and the comment form. The actual display of comments is
- * handled by a callback to flex_comment() which is
+ * handled by a callback to superb_comment() which is
  * located in the functions.php file.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 /*
@@ -27,26 +27,26 @@ if ( post_password_required() )
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-			printf( _n( 'One response on &ldquo;%2$s&rdquo;', '%1$s responses on &ldquo;%2$s&rdquo;', get_comments_number(), 'flex' ),
+			printf( _n( 'One response on &ldquo;%2$s&rdquo;', '%1$s responses on &ldquo;%2$s&rdquo;', get_comments_number(), 'superb' ),
 			number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
 
 		<ol class="commentlist">
-			<?php wp_list_comments( array( 'callback' => 'flex_comment', 'style' => 'ol' ) ); ?>
+			<?php wp_list_comments( array( 'callback' => 'superb_comment', 'style' => 'ol' ) ); ?>
 		</ol> <!-- /.commentlist -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 			<nav id="comment-nav-below" class="navigation" role="navigation">
-				<h1 class="assistive-text section-heading"><?php esc_html_e( 'Comment navigation', 'flex' ); ?></h1>
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'flex' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'flex' ) ); ?></div>
+				<h1 class="assistive-text section-heading"><?php esc_html_e( 'Comment navigation', 'superb' ); ?></h1>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'superb' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'superb' ) ); ?></div>
 			</nav>
 		<?php endif; // check for comment navigation ?>
 
 	<?php // If comments are closed and there are comments, let's leave a little note.
 	elseif ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-		<p class="nocomments"><?php esc_html_e( 'Comments are closed.', 'flex' ); ?></p>
+		<p class="nocomments"><?php esc_html_e( 'Comments are closed.', 'superb' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

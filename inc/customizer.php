@@ -1,20 +1,20 @@
 <?php
 /**
- * Flex Theme Customizer support
+ * Superb Theme Customizer support
  *
  * @package WordPress
- * @subpackage Flex
- * @since Flex 1.0
+ * @subpackage Superb
+ * @since Superb 1.0
  */
 
 /**
  * Implement Theme Customizer additions and adjustments.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function flex_customize_register($wp_customize) {
+function superb_customize_register($wp_customize) {
     $wp_customize->get_section('header_image')->priority = 26;
     $wp_customize->get_section('static_front_page')->priority = 27;
     $wp_customize->get_section('nav')->priority = 28;
@@ -22,7 +22,7 @@ function flex_customize_register($wp_customize) {
     /** ===============
      * Extends CONTROLS class to add textarea
      */
-    class flex_customize_textarea_control extends WP_Customize_Control {
+    class superb_customize_textarea_control extends WP_Customize_Control {
 
         public $type = 'textarea';
 
@@ -50,7 +50,7 @@ function flex_customize_register($wp_customize) {
                         'name' => '_customize-dropdown-categories-' . $this->id,
                         'echo' => 0,
                         'hide_empty' => false,
-                        'show_option_none' => '&mdash; ' . __('Select', 'flex') . ' &mdash;',
+                        'show_option_none' => '&mdash; ' . __('Select', 'superb') . ' &mdash;',
                         'hide_if_empty' => false,
                         'selected' => $this->value(),
                     )
@@ -66,40 +66,40 @@ function flex_customize_register($wp_customize) {
     }
 
     // Add new section for theme layout and color schemes
-    $wp_customize->add_section('flex_theme_layout_settings', array(
-        'title' => __('Color Scheme', 'flex'),
+    $wp_customize->add_section('superb_theme_layout_settings', array(
+        'title' => __('Color Scheme', 'superb'),
         'priority' => 30,
     ));
 
 
     // Add color scheme options
 
-    $wp_customize->add_setting('flex_color_scheme', array(
+    $wp_customize->add_setting('superb_color_scheme', array(
         'default' => 'blue',
-        'sanitize_callback' => 'flex_sanitize_color_scheme_option',
+        'sanitize_callback' => 'superb_sanitize_color_scheme_option',
     ));
 
-    $wp_customize->add_control('flex_color_scheme', array(
+    $wp_customize->add_control('superb_color_scheme', array(
         'label' => 'Color Schemes',
-        'section' => 'flex_theme_layout_settings',
+        'section' => 'superb_theme_layout_settings',
         'default' => 'red',
         'type' => 'radio',
         'choices' => array(
-            'blue' => __('Blue', 'flex'),
-            'red' => __('Red', 'flex'),
-            'green' => __('Green', 'flex'),
-            'purple' => __('Purple', 'flex'),
-            'orange' => __('Orange', 'flex'),
-            'brown' => __('Brown', 'flex'),
-            'pink' => __('Pink', 'flex'),
-            'yellow' => __('Yellow', 'flex'),
+            'blue' => __('Blue', 'superb'),
+            'red' => __('Red', 'superb'),
+            'green' => __('Green', 'superb'),
+            'purple' => __('Purple', 'superb'),
+            'orange' => __('Orange', 'superb'),
+            'brown' => __('Brown', 'superb'),
+            'pink' => __('Pink', 'superb'),
+            'yellow' => __('Yellow', 'superb'),
         ),
     ));
 
 
     // Add new section for Custom Favicon settings
-    $wp_customize->add_section('flex_custom_favicon_setting', array(
-        'title' => __('Custom Favicon', 'flex'),
+    $wp_customize->add_section('superb_custom_favicon_setting', array(
+        'title' => __('Custom Favicon', 'superb'),
         'priority' => 68,
     ));
 
@@ -110,7 +110,7 @@ function flex_customize_register($wp_customize) {
             new WP_Customize_Image_Control(
             $wp_customize, 'custom_favicon', array(
         'label' => 'Custom Favicon',
-        'section' => 'flex_custom_favicon_setting',
+        'section' => 'superb_custom_favicon_setting',
         'settings' => 'custom_favicon',
         'priority' => 1,
             )
@@ -118,8 +118,8 @@ function flex_customize_register($wp_customize) {
     );
 
     // Add new section for Custom Favicon settings
-    $wp_customize->add_section('flex_tracking_code_setting', array(
-        'title' => __('Tracking Code', 'flex'),
+    $wp_customize->add_section('superb_tracking_code_setting', array(
+        'title' => __('Tracking Code', 'superb'),
         'priority' => 69,
     ));
 
@@ -128,16 +128,16 @@ function flex_customize_register($wp_customize) {
         'sanitize_callback' => 'sanitize_text_field',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'tracking_code', array(
-        'label' => __('Tracking Code', 'flex'),
-        'section' => 'flex_tracking_code_setting',
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'tracking_code', array(
+        'label' => __('Tracking Code', 'superb'),
+        'section' => 'superb_tracking_code_setting',
         'settings' => 'tracking_code',
         'priority' => 2,
     )));
 
     // Add new section for Header Contact settings
     $wp_customize->add_section('header_contact_setting', array(
-        'title' => __('Header Contact', 'flex'),
+        'title' => __('Header Contact', 'superb'),
         'priority' => 36,
     ));
 
@@ -146,8 +146,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'header_contact', array(
-        'label' => __('Contact Detail', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'header_contact', array(
+        'label' => __('Contact Detail', 'superb'),
         'section' => 'header_contact_setting',
         'settings' => 'header_contact',
         'priority' => 2,
@@ -155,7 +155,7 @@ function flex_customize_register($wp_customize) {
 
     // Add new section for slider settings
     $wp_customize->add_section('home_slider_setting', array(
-        'title' => __('Home Slider', 'flex'),
+        'title' => __('Home Slider', 'superb'),
         'priority' => 37,
     ));
 
@@ -181,7 +181,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_title_one', array(
-        'label' => __('Slider One Title', 'flex'),
+        'label' => __('Slider One Title', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_title_one',
         'priority' => 2,
@@ -192,8 +192,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'slider_one_description', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'slider_one_description', array(
+        'label' => __('Description', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_one_description',
         'priority' => 3,
@@ -206,20 +206,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_one_link_text', array(
-        'label' => __('Slider One Link Text', 'flex'),
+        'label' => __('Slider One Link Text', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_one_link_text',
         'priority' => 4,
     ));
 
     // link url
-    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('slider_one_link_url', array(
-        'label' => __('Slider One Link URL', 'flex'),
+        'label' => __('Slider One Link URL', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_one_link_url',
         'priority' => 5,
@@ -247,7 +247,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_title_two', array(
-        'label' => __('Slider Two Title', 'flex'),
+        'label' => __('Slider Two Title', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_title_two',
         'priority' => 7,
@@ -258,8 +258,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'slider_two_description', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'slider_two_description', array(
+        'label' => __('Description', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_two_description',
         'priority' => 8,
@@ -272,20 +272,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_two_link_text', array(
-        'label' => __('Slider Two Link Text', 'flex'),
+        'label' => __('Slider Two Link Text', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_two_link_text',
         'priority' => 9,
     ));
 
     // link url
-    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('slider_two_link_url', array(
-        'label' => __('Slider Two Link URL', 'flex'),
+        'label' => __('Slider Two Link URL', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_two_link_url',
         'priority' => 10,
@@ -315,7 +315,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_title_three', array(
-        'label' => __('Slider Three Title', 'flex'),
+        'label' => __('Slider Three Title', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_title_three',
         'priority' => 12,
@@ -326,8 +326,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'slider_three_description', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'slider_three_description', array(
+        'label' => __('Description', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_three_description',
         'priority' => 13,
@@ -340,20 +340,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_three_link_text', array(
-        'label' => __('Slider Three Link Text', 'flex'),
+        'label' => __('Slider Three Link Text', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_three_link_text',
         'priority' => 14,
     ));
 
     // link url
-    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('slider_three_link_url', array(
-        'label' => __('Slider Three Link URL', 'flex'),
+        'label' => __('Slider Three Link URL', 'superb'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_three_link_url',
         'priority' => 15,
@@ -362,83 +362,83 @@ function flex_customize_register($wp_customize) {
     
     // Add new section for Social Icons
     $wp_customize->add_section('social_icon_setting', array(
-        'title' => __('Social Icons', 'flex'),
+        'title' => __('Social Icons', 'superb'),
         'priority' => 35,
     ));
 
     // link url
-    $wp_customize->add_setting('facebook_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('facebook_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('facebook_link_url', array(
-        'label' => __('Facebook URL', 'flex'),
+        'label' => __('Facebook URL', 'superb'),
         'section' => 'social_icon_setting',
         'settings' => 'facebook_link_url',
         'priority' => 1,
     ));
 
     // link url
-    $wp_customize->add_setting('twitter_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('twitter_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('twitter_link_url', array(
-        'label' => __('Twitter URL', 'flex'),
+        'label' => __('Twitter URL', 'superb'),
         'section' => 'social_icon_setting',
         'settings' => 'twitter_link_url',
         'priority' => 2,
     ));
 
     // link url
-    $wp_customize->add_setting('googleplus_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('googleplus_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('googleplus_link_url', array(
-        'label' => __('Google Plus URL', 'flex'),
+        'label' => __('Google Plus URL', 'superb'),
         'section' => 'social_icon_setting',
         'settings' => 'googleplus_link_url',
         'priority' => 3,
     ));
 
     // link url
-    $wp_customize->add_setting('pinterest_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('pinterest_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('pinterest_link_url', array(
-        'label' => __('Pinterest URL', 'flex'),
+        'label' => __('Pinterest URL', 'superb'),
         'section' => 'social_icon_setting',
         'settings' => 'pinterest_link_url',
         'priority' => 4,
     ));
 
     // link url
-    $wp_customize->add_setting('github_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('github_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('github_link_url', array(
-        'label' => __('Github URL', 'flex'),
+        'label' => __('Github URL', 'superb'),
         'section' => 'social_icon_setting',
         'settings' => 'github_link_url',
         'priority' => 5,
     ));
 
     // link url
-    $wp_customize->add_setting('youtube_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('youtube_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('youtube_link_url', array(
-        'label' => __('Youtube URL', 'flex'),
+        'label' => __('Youtube URL', 'superb'),
         'section' => 'social_icon_setting',
         'settings' => 'youtube_link_url',
         'priority' => 6,
@@ -447,7 +447,7 @@ function flex_customize_register($wp_customize) {
 
     // Add new section for Home Featured One settings
     $wp_customize->add_section('home_featured_one_setting', array(
-        'title' => __('Home Featured #1', 'flex'),
+        'title' => __('Home Featured #1', 'superb'),
         'priority' => 40,
     ));
 
@@ -472,7 +472,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_title_one', array(
-        'label' => __('Title', 'flex'),
+        'label' => __('Title', 'superb'),
         'section' => 'home_featured_one_setting',
         'settings' => 'home_title_one',
         'priority' => 2,
@@ -483,8 +483,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'home_description_one', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'home_description_one', array(
+        'label' => __('Description', 'superb'),
         'section' => 'home_featured_one_setting',
         'settings' => 'home_description_one',
         'priority' => 3,
@@ -497,20 +497,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_one_link_text', array(
-        'label' => __('Link Text', 'flex'),
+        'label' => __('Link Text', 'superb'),
         'section' => 'home_featured_one_setting',
         'settings' => 'home_one_link_text',
         'priority' => 4,
     ));
 
     // link url
-    $wp_customize->add_setting('home_one_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('home_one_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('home_one_link_url', array(
-        'label' => __('Link URL', 'flex'),
+        'label' => __('Link URL', 'superb'),
         'section' => 'home_featured_one_setting',
         'settings' => 'home_one_link_url',
         'priority' => 5,
@@ -518,7 +518,7 @@ function flex_customize_register($wp_customize) {
 
     // Add new section for Home Featured Two settings
     $wp_customize->add_section('home_featured_two_setting', array(
-        'title' => __('Home Featured #2', 'flex'),
+        'title' => __('Home Featured #2', 'superb'),
         'priority' => 45,
     ));
 
@@ -543,7 +543,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_title_two', array(
-        'label' => __('Title', 'flex'),
+        'label' => __('Title', 'superb'),
         'section' => 'home_featured_two_setting',
         'settings' => 'home_title_two',
         'priority' => 2,
@@ -554,8 +554,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'home_description_two', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'home_description_two', array(
+        'label' => __('Description', 'superb'),
         'section' => 'home_featured_two_setting',
         'settings' => 'home_description_two',
         'priority' => 3,
@@ -568,20 +568,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_two_link_text', array(
-        'label' => __('Link Text', 'flex'),
+        'label' => __('Link Text', 'superb'),
         'section' => 'home_featured_two_setting',
         'settings' => 'home_two_link_text',
         'priority' => 4,
     ));
 
     // link url
-    $wp_customize->add_setting('home_two_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('home_two_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('home_two_link_url', array(
-        'label' => __('Link URL', 'flex'),
+        'label' => __('Link URL', 'superb'),
         'section' => 'home_featured_two_setting',
         'settings' => 'home_two_link_url',
         'priority' => 5,
@@ -591,7 +591,7 @@ function flex_customize_register($wp_customize) {
 
     // Add new section for Home Featured Three settings
     $wp_customize->add_section('home_featured_three_setting', array(
-        'title' => __('Home Featured #3', 'flex'),
+        'title' => __('Home Featured #3', 'superb'),
         'priority' => 50,
     ));
 
@@ -616,7 +616,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_title_three', array(
-        'label' => __('Title', 'flex'),
+        'label' => __('Title', 'superb'),
         'section' => 'home_featured_three_setting',
         'settings' => 'home_title_three',
         'priority' => 2,
@@ -627,8 +627,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'home_description_three', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'home_description_three', array(
+        'label' => __('Description', 'superb'),
         'section' => 'home_featured_three_setting',
         'settings' => 'home_description_three',
         'priority' => 3,
@@ -641,20 +641,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_three_link_text', array(
-        'label' => __('Link Text', 'flex'),
+        'label' => __('Link Text', 'superb'),
         'section' => 'home_featured_three_setting',
         'settings' => 'home_three_link_text',
         'priority' => 4,
     ));
 
     // link url
-    $wp_customize->add_setting('home_three_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('home_three_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('home_three_link_url', array(
-        'label' => __('Link URL', 'flex'),
+        'label' => __('Link URL', 'superb'),
         'section' => 'home_featured_three_setting',
         'settings' => 'home_three_link_url',
         'priority' => 5,
@@ -664,7 +664,7 @@ function flex_customize_register($wp_customize) {
 
     // Add new section for Home Tagline settings
     $wp_customize->add_section('tagline_setting', array(
-        'title' => __('Home Tagline', 'flex'),
+        'title' => __('Home Tagline', 'superb'),
         'priority' => 55,
     ));
 
@@ -676,7 +676,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('tagline_title', array(
-        'label' => __('Tagline', 'flex'),
+        'label' => __('Tagline', 'superb'),
         'section' => 'tagline_setting',
         'settings' => 'tagline_title',
     ));
@@ -686,73 +686,73 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'tagline_description', array(
-        'label' => __('Description', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'tagline_description', array(
+        'label' => __('Description', 'superb'),
         'section' => 'tagline_setting',
         'settings' => 'tagline_description',
         'priority' => 20,
     )));
 
     // Add new section for displaying Featured Posts on Front Page
-    $wp_customize->add_section('flex_front_page_post_options', array(
-        'title' => __('Featured Posts', 'flex'),
-        'description' => __('Settings for displaying featured posts on Front Page', 'flex'),
+    $wp_customize->add_section('superb_front_page_post_options', array(
+        'title' => __('Featured Posts', 'superb'),
+        'description' => __('Settings for displaying featured posts on Front Page', 'superb'),
         'priority' => 57,
     ));
 
     // enable featured posts on front page?
-    $wp_customize->add_setting('flex_front_featured_posts_check', array(
+    $wp_customize->add_setting('superb_front_featured_posts_check', array(
         'default' => 1,
-        'sanitize_callback' => 'flex_sanitize_checkbox',
+        'sanitize_callback' => 'superb_sanitize_checkbox',
     ));
-    $wp_customize->add_control('flex_front_featured_posts_check', array(
-        'label' => __('Show featured posts on Front Page', 'flex'),
-        'section' => 'flex_front_page_post_options',
+    $wp_customize->add_control('superb_front_featured_posts_check', array(
+        'label' => __('Show featured posts on Front Page', 'superb'),
+        'section' => 'superb_front_page_post_options',
         'priority' => 1,
         'type' => 'checkbox',
     ));
 
 
     // post Title
-    $wp_customize->add_setting('flex_post_title', array(
+    $wp_customize->add_setting('superb_post_title', array(
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control('flex_post_title', array(
-        'label' => __('Section Title', 'flex'),
-        'section' => 'flex_front_page_post_options',
-        'settings' => 'flex_post_title',
+    $wp_customize->add_control('superb_post_title', array(
+        'label' => __('Section Title', 'superb'),
+        'section' => 'superb_front_page_post_options',
+        'settings' => 'superb_post_title',
         'priority' => 2,
     ));
 
 
     // select number of posts for featured posts on front page
-    $wp_customize->add_setting('flex_front_featured_posts_count', array(
+    $wp_customize->add_setting('superb_front_featured_posts_count', array(
         'default' => 3,
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
-    $wp_customize->add_control('flex_front_featured_posts_count', array(
-        'label' => __('Number of posts to display', 'flex'),
-        'section' => 'flex_front_page_post_options',
-        'settings' => 'flex_front_featured_posts_count',
+    $wp_customize->add_control('superb_front_featured_posts_count', array(
+        'label' => __('Number of posts to display', 'superb'),
+        'section' => 'superb_front_page_post_options',
+        'settings' => 'superb_front_featured_posts_count',
         'priority' => 20,
     ));
     // select category for featured posts 
-    $wp_customize->add_setting('flex_front_featured_posts_cat', array('default' => 0,));
-    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'flex_front_featured_posts_cat', array(
-        'label' => __('Post Category', 'flex'),
-        'section' => 'flex_front_page_post_options',
+    $wp_customize->add_setting('superb_front_featured_posts_cat', array('default' => 0,));
+    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'superb_front_featured_posts_cat', array(
+        'label' => __('Post Category', 'superb'),
+        'section' => 'superb_front_page_post_options',
         'type' => 'dropdown-categories',
-        'settings' => 'flex_front_featured_posts_cat',
+        'settings' => 'superb_front_featured_posts_cat',
         'priority' => 30,
     )));
 
 
     // Add new section for Home CTA settings
     $wp_customize->add_section('home_cta_setting', array(
-        'title' => __('Home CTA', 'flex'),
+        'title' => __('Home CTA', 'superb'),
         'priority' => 62,
     ));
 
@@ -761,8 +761,8 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'cta_text', array(
-        'label' => __('CTA Text', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'cta_text', array(
+        'label' => __('CTA Text', 'superb'),
         'section' => 'home_cta_setting',
         'settings' => 'cta_text',
         'priority' => 1,
@@ -776,20 +776,20 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('home_cta_link_text', array(
-        'label' => __('Link Text', 'flex'),
+        'label' => __('Link Text', 'superb'),
         'section' => 'home_cta_setting',
         'settings' => 'home_cta_link_text',
         'priority' => 2,
     ));
 
     // link url
-    $wp_customize->add_setting('home_cta_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('home_cta_link_url', array('default' => __('', 'superb'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('home_cta_link_url', array(
-        'label' => __('Link URL', 'flex'),
+        'label' => __('Link URL', 'superb'),
         'section' => 'home_cta_setting',
         'settings' => 'home_cta_link_url',
         'priority' => 3,
@@ -797,15 +797,15 @@ function flex_customize_register($wp_customize) {
 
     // Add new section for Home Tagline settings
     $wp_customize->add_section('contact_setting', array(
-        'title' => __('Contact Details', 'flex'),
+        'title' => __('Contact Details', 'superb'),
         'priority' => 64,
     ));
     $wp_customize->add_setting('contact_details_check', array('default' => 0,
-        'sanitize_callback' => 'flex_sanitize_checkbox',
+        'sanitize_callback' => 'superb_sanitize_checkbox',
     ));
 
     $wp_customize->add_control('contact_details_check', array(
-        'label' => __('Show Contact Details', 'flex'),
+        'label' => __('Show Contact Details', 'superb'),
         'section' => 'contact_setting',
         'priority' => 1,
         'type' => 'checkbox',
@@ -818,7 +818,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('contact_title', array(
-        'label' => __('Title', 'flex'),
+        'label' => __('Title', 'superb'),
         'section' => 'contact_setting',
         'settings' => 'contact_title',
         'priority' => 2,
@@ -830,7 +830,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('contact_email', array(
-        'label' => __('Email', 'flex'),
+        'label' => __('Email', 'superb'),
         'section' => 'contact_setting',
         'settings' => 'contact_email',
         'priority' => 3,
@@ -842,7 +842,7 @@ function flex_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('contact_phone', array(
-        'label' => __('Phone', 'flex'),
+        'label' => __('Phone', 'superb'),
         'section' => 'contact_setting',
         'settings' => 'contact_phone',
         'priority' => 4,
@@ -853,19 +853,19 @@ function flex_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'address_detail', array(
-        'label' => __('Address', 'flex'),
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'address_detail', array(
+        'label' => __('Address', 'superb'),
         'section' => 'contact_setting',
         'settings' => 'address_detail',
         'priority' => 5,
     )));
 
     $wp_customize->add_setting('social_icons_check', array('default' => 0,
-        'sanitize_callback' => 'flex_sanitize_checkbox',
+        'sanitize_callback' => 'superb_sanitize_checkbox',
     ));
 
     $wp_customize->add_control('social_icons_check', array(
-        'label' => __('Show Social Icons', 'flex'),
+        'label' => __('Show Social Icons', 'superb'),
         'section' => 'contact_setting',
         'priority' => 6,
         'type' => 'checkbox',
@@ -874,69 +874,69 @@ function flex_customize_register($wp_customize) {
 
 
     // Add new section for Home Tagline settings
-    $wp_customize->add_section('flex_contact_form_setting', array(
+    $wp_customize->add_section('superb_contact_form_setting', array(
         'title' => __('Contact Form', 'prism'),
         'priority' => 67,
     ));
 
     $wp_customize->add_setting('contact_form_check', array('default' => 0,
-        'sanitize_callback' => 'flex_sanitize_checkbox',
+        'sanitize_callback' => 'superb_sanitize_checkbox',
     ));
 
     $wp_customize->add_control('contact_form_check', array(
-        'label' => __('Show Contact form', 'flex'),
-        'section' => 'flex_contact_form_setting',
+        'label' => __('Show Contact form', 'superb'),
+        'section' => 'superb_contact_form_setting',
         'priority' => 1,
         'type' => 'checkbox',
     ));
 
-    $wp_customize->add_setting('flex_contact_form', array(
+    $wp_customize->add_setting('superb_contact_form', array(
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control('flex_contact_form', array(
-        'label' => __('Contact Form Short Code', 'flex'),
-        'section' => 'flex_contact_form_setting',
-        'settings' => 'flex_contact_form',
+    $wp_customize->add_control('superb_contact_form', array(
+        'label' => __('Contact Form Short Code', 'superb'),
+        'section' => 'superb_contact_form_setting',
+        'settings' => 'superb_contact_form',
         'priority' => 2,
     ));
 
 
     // Add footer text section
-    $wp_customize->add_section('flex_footer', array(
+    $wp_customize->add_section('superb_footer', array(
         'title' => 'Footer Text', // The title of section
         'priority' => 75,
     ));
 
-    $wp_customize->add_setting('flex_footer_footer_text', array(
+    $wp_customize->add_setting('superb_footer_footer_text', array(
         'default' => null,
         'sanitize_callback' => 'sanitize_text_field',
-        'sanitize_js_callback' => 'flex_sanitize_escaping',
+        'sanitize_js_callback' => 'superb_sanitize_escaping',
         'transport' => 'postMessage',
     ));
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'flex_footer_footer_text', array(
-        'section' => 'flex_footer', // id of section to which the setting belongs
-        'settings' => 'flex_footer_footer_text',
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'superb_footer_footer_text', array(
+        'section' => 'superb_footer', // id of section to which the setting belongs
+        'settings' => 'superb_footer_footer_text',
     )));
 
 
     // Add custom CSS section
-    $wp_customize->add_section('flex_custom_css', array(
+    $wp_customize->add_section('superb_custom_css', array(
         'title' => 'Custom CSS', // The title of section
         'priority' => 80,
     ));
 
-    $wp_customize->add_setting('flex_custom_css', array(
+    $wp_customize->add_setting('superb_custom_css', array(
         'default' => '',
-        'sanitize_callback' => 'flex_sanitize_custom_css',
-        'sanitize_js_callback' => 'flex_sanitize_escaping',
+        'sanitize_callback' => 'superb_sanitize_custom_css',
+        'sanitize_js_callback' => 'superb_sanitize_escaping',
         'transport' => 'postMessage',
     ));
 
-    $wp_customize->add_control(new flex_customize_textarea_control($wp_customize, 'flex_custom_css', array(
-        'section' => 'flex_custom_css', // id of section to which the setting belongs
-        'settings' => 'flex_custom_css',
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'superb_custom_css', array(
+        'section' => 'superb_custom_css', // id of section to which the setting belongs
+        'settings' => 'superb_custom_css',
     )));
 
 
@@ -950,16 +950,16 @@ function flex_customize_register($wp_customize) {
     $wp_customize->get_setting('blogdescription')->transport = 'postMessage';
 }
 
-add_action('customize_register', 'flex_customize_register');
+add_action('customize_register', 'superb_customize_register');
 
 
 /*
  * Sanitize numeric values 
  * 
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
-function flex_sanitize_integer($input) {
+function superb_sanitize_integer($input) {
     if (is_numeric($input)) {
         return intval($input);
     }
@@ -968,10 +968,10 @@ function flex_sanitize_integer($input) {
 /*
  * Escaping for input values
  * 
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
-function flex_sanitize_escaping($input) {
+function superb_sanitize_escaping($input) {
     $input = esc_attr($input);
     return $input;
 }
@@ -979,10 +979,10 @@ function flex_sanitize_escaping($input) {
 /*
  * Sanitize Custom CSS 
  * 
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
-function flex_sanitize_custom_css($input) {
+function superb_sanitize_custom_css($input) {
     $input = wp_kses_stripslashes($input);
     return $input;
 }
@@ -990,10 +990,10 @@ function flex_sanitize_custom_css($input) {
 /*
  * Sanitize Checkbox input values
  * 
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
-function flex_sanitize_checkbox($input) {
+function superb_sanitize_checkbox($input) {
     if ($input) {
         $output = '1';
     } else {
@@ -1005,10 +1005,10 @@ function flex_sanitize_checkbox($input) {
 /*
  * Sanitize layout options 
  * 
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
-function flex_sanitize_layout_option($layout_option) {
+function superb_sanitize_layout_option($layout_option) {
     if (!in_array($layout_option, array('full-width', 'boxed'))) {
         $layout_option = 'boxed';
     }
@@ -1019,10 +1019,10 @@ function flex_sanitize_layout_option($layout_option) {
 /*
  * Sanitize color scheme options 
  * 
- * @since Flex 1.0
+ * @since Superb 1.0
  */
 
-function flex_sanitize_color_scheme_option($colorscheme_option) {
+function superb_sanitize_color_scheme_option($colorscheme_option) {
     if (!in_array($colorscheme_option, array('blue', 'red', 'green', 'purple', 'orange', 'brown', 'pink', 'yellow'))) {
         $colorscheme_option = 'blue';
     }
@@ -1033,23 +1033,23 @@ function flex_sanitize_color_scheme_option($colorscheme_option) {
 /**
  * Bind JS handlers to make Theme Customizer preview reload changes asynchronously.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  */
-function flex_customize_preview_js() {
-    wp_enqueue_script('flex_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array('customize-preview'), '20131205', true);
+function superb_customize_preview_js() {
+    wp_enqueue_script('superb_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array('customize-preview'), '20131205', true);
 }
 
-add_action('customize_preview_init', 'flex_customize_preview_js');
+add_action('customize_preview_init', 'superb_customize_preview_js');
 
-function flex_header_output() {
+function superb_header_output() {
     ?>
     <!--Customizer CSS--> 
     <style type="text/css">
-    <?php echo esc_attr(get_theme_mod('flex_custom_css')); ?>
+    <?php echo esc_attr(get_theme_mod('superb_custom_css')); ?>
     </style> 
     <!--/Customizer CSS-->
     <?php
 }
 
 // Output custom CSS to live site
-add_action('wp_head', 'flex_header_output');
+add_action('wp_head', 'superb_header_output');

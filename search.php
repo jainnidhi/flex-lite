@@ -2,8 +2,8 @@
 /**
  * The template for displaying Search Results.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 get_header(); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( esc_html_e( 'Search Results for: %s', 'flex' ), '<span>&ldquo;' . get_search_query() . '&rdquo;</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( esc_html_e( 'Search Results for: %s', 'superb' ), '<span>&ldquo;' . get_search_query() . '&rdquo;</span>' ); ?></h1>
 				</header>
 
 				<?php // Start the Loop ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 					<?php get_template_part( 'content/content', get_post_format() ); ?>
 				<?php endwhile; ?>
 
-				<?php flex_content_nav( 'nav-below' ); ?>
+				<?php superb_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

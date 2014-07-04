@@ -2,8 +2,8 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 ?>
 <?php if(is_active_sidebar('sidebar-main')) { ?>

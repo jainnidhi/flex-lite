@@ -2,8 +2,8 @@
 /**
  * The template for displaying an archive page for Tags.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 
 					<header class="archive-header">
-						<h1 class="archive-title"><?php printf( esc_html__( 'Tag Archives: %s', 'flex' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
+						<h1 class="archive-title"><?php printf( esc_html__( 'Tag Archives: %s', 'superb' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
 
 						<?php if ( tag_description() ) { // Show an optional tag description ?>
 							<div class="archive-meta"><?php echo tag_description(); ?></div>
@@ -31,7 +31,7 @@ get_header(); ?>
 						<?php get_template_part( 'content/content', get_post_format() ); ?>
 					<?php endwhile; ?>
 
-					<?php flex_content_nav( 'nav-below' ); ?>
+					<?php superb_content_nav( 'nav-below' ); ?>
 
 				<?php else : ?>
 

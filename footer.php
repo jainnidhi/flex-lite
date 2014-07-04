@@ -6,8 +6,8 @@
  * There are also four footer widgets displayed. These will be displayed from
  * one to four columns, depending on how many widgets are active.
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 ?>
 
@@ -47,16 +47,16 @@
 
     <div class="footer-wrap clearfix">
         <div class="footer-wrap-container">
-        <?php if (get_theme_mod('flex_footer_footer_text') == '') { ?>
+        <?php if (get_theme_mod('superb_footer_footer_text') == '') { ?>
             <div class="smallprint">
                 <p>
-                    <a href="<?php $flex_theme = wp_get_theme(); echo $flex_theme->get( 'ThemeURI' ); ?>">
-                        <?php _e('Flex WordPress theme by IdeaBox', 'flex'); ?>
+                    <a href="<?php $superb_theme = wp_get_theme(); echo $superb_theme->get( 'ThemeURI' ); ?>">
+                        <?php _e('Superb WordPress theme by IdeaBox', 'superb'); ?>
                     </a>
                 </p>
             </div>
         <?php } else { ?>   
-                    <div class="smallprint"><?php echo wpautop(get_theme_mod('flex_footer_footer_text')); ?></div>
+                    <div class="smallprint"><?php echo wpautop(get_theme_mod('superb_footer_footer_text')); ?></div>
         <?php } ?> 
                     <div class="footer-extras">
                          <div class="social-links">

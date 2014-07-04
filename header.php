@@ -6,8 +6,8 @@ global $edd_options;
  *
  * Displays all of the <head> section and everything up till <div id="maincontentcontainer">
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 ?>
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
@@ -45,7 +45,7 @@ global $edd_options;
 
             <div id="wrapper" class="hfeed site">
 
-                <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'flex'); ?>"><?php esc_html_e('Skip to main content', 'flex'); ?></a></div>
+                <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'superb'); ?>"><?php esc_html_e('Skip to main content', 'superb'); ?></a></div>
 
                 <div id="headercontainer">
 
@@ -55,7 +55,7 @@ global $edd_options;
                             <?php if (get_theme_mod('header_contact') != '') { ?>
                                 <p><?php echo esc_html(get_theme_mod('header_contact')); ?></p>
                             <?php } else { ?>
-                                <p><?php esc_html_e('Call us on  24x7: 800-555-0101', 'flex') ?> </p>
+                                <p><?php esc_html_e('Call us on  24x7: 800-555-0101', 'superb') ?> </p>
                             <?php } ?>
                         </div>
                         </div>

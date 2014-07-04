@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Flex\n"
+"Project-Id-Version: Superb\n"
 "POT-Creation-Date: 2014-04-02 23:53+0530\n"
 "PO-Revision-Date: 2014-04-03 00:06+0530\n"
 "Last-Translator: \n"
@@ -117,7 +117,7 @@ msgid "Archives by Month"
 msgstr ""
 
 #: footer.php:52
-msgid "Flex WordPress theme by IdeaBox"
+msgid "Superb WordPress theme by IdeaBox"
 msgstr ""
 
 #: functions.php:81

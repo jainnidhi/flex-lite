@@ -8,8 +8,8 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 get_header(); ?>                             
@@ -29,7 +29,7 @@ get_header(); ?>
 					<?php get_template_part( 'content/content', get_post_format() ); // Include the Post-Format-specific template for the content ?>
 				<?php endwhile; ?>
 
-				<?php flex_content_nav( 'nav-below' ); ?>
+				<?php superb_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

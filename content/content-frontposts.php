@@ -2,17 +2,22 @@
 /**
  * The template for displaying featured posts on Front Page 
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 ?>
 
 <?php
 // Start a new query for displaying featured posts on Front Page
 
-if (get_theme_mod('flex_front_featured_posts_check')) {
-    $featured_count = intval(get_theme_mod('flex_front_featured_posts_count'));
-    $var = get_theme_mod('flex_front_featured_posts_cat');
+if (get_theme_mod('superb_front_featured_posts_check')) {
+    if (get_theme_mod('superb_front_featured_posts_count')){
+        $featured_count = intval(get_theme_mod('superb_front_featured_posts_count'));
+    }
+    else {
+        $featured_count = 2; 
+    }
+    $var = get_theme_mod('superb_front_featured_posts_cat');
 
     // if no category is selected then return 0 
     $featured_cat_id = max((int) $var, 0);
@@ -26,9 +31,9 @@ if (get_theme_mod('flex_front_featured_posts_check')) {
     $featuredposts = new WP_Query($featured_post_args);
     ?>
     
-     <?php if ( get_theme_mod('flex_post_title') !='' ) {  ?><h2><?php echo esc_html(get_theme_mod('flex_post_title')); ?></h2>
+     <?php if ( get_theme_mod('superb_post_title') !='' ) {  ?><h2><?php echo esc_html(get_theme_mod('superb_post_title')); ?></h2>
 
-                          <?php } else {  ?> <h2><?php esc_html_e('Recent Posts', 'flex') ?></h2>
+                          <?php } else {  ?> <h2><?php esc_html_e('Recent Posts', 'superb') ?></h2>
                                    <?php } ?>
     <div id="front-featured-posts">
         
@@ -44,7 +49,7 @@ if (get_theme_mod('flex_front_featured_posts_check')) {
 
                             <div class="featured-post-content">
                                 
-                                <span class="post-meta"><small><?php the_time(esc_html('j M','flex')); ?> <!-- by <?php the_author() ?> --></small></span>
+                                <span class="post-meta"><small><?php the_time(esc_html('j M','superb')); ?> <!-- by <?php the_author() ?> --></small></span>
 
                             </div> <!--end .featured-post-content -->
                            
@@ -65,8 +70,8 @@ if (get_theme_mod('flex_front_featured_posts_check')) {
 
                 <?php else : ?>
 
-                    <h2 class="center"><?php esc_html_e('Not Found', 'flex'); ?></h2>
-                    <p class="center"><?php esc_html_e('Sorry, but you are looking for something that is not here', 'flex'); ?></p>
+                    <h2 class="center"><?php esc_html_e('Not Found', 'superb'); ?></h2>
+                    <p class="center"><?php esc_html_e('Sorry, but you are looking for something that is not here', 'superb'); ?></p>
                     <?php get_search_form(); ?>
                 <?php endif; ?>
 

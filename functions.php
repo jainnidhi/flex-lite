@@ -1,37 +1,17 @@
 <?php
 /**
- * Flex functions and definitions
+ * Superb functions and definitions
  *
- * @package Flex
- * @since Flex 1.0
+ * @package Superb
+ * @since Superb 1.0
  */
 
 require( get_template_directory() . '/inc/customizer.php' ); // new customizer options
-
-
-if (!class_exists('flex_SL_Theme_Updater')) {
-    // Load our custom theme updater
-    include( dirname(__FILE__) . '/inc/theme-updater.php' );
-}
-
-// configuration file for theme licensing 
-// theme updater and licensing
-
-include(get_stylesheet_directory() . '/inc/theme-updater-config.php');
 
 /**
  * Add support for a custom header image.
  */
 require( get_template_directory() . '/inc/custom-header.php' );
-
-
-/**
- * Set the content width based on the theme's design and stylesheet.
- *
- * @since Flex 1.0
- */
-if ( ! isset( $content_width ) )
-	$content_width = 647; /* Default the embedded content width to 790px */
 
 
 /**
@@ -41,21 +21,32 @@ if ( ! isset( $content_width ) )
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  *
  * @return void
  */
-if ( ! function_exists( 'flex_setup' ) ) {
-	function flex_setup() {
+if ( ! function_exists( 'superb_setup' ) ) {
+	function superb_setup() {
+            
 		global $content_width;
+
+                /**
+                 * Set the content width based on the theme's design and stylesheet.
+                 *
+                 * @since Superb 1.0
+                 */
+                if ( ! isset( $content_width ) )
+                        $content_width = 647; /* Default the embedded content width to 790px */
+
+
 
 		/**
 		 * Make theme available for translation
 		 * Translations can be filed in the /languages/ directory
-		 * If you're building a theme based on Flex, use a find and replace
-		 * to change 'flex' to the name of your theme in all the template files
+		 * If you're building a theme based on Superb, use a find and replace
+		 * to change 'superb' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( 'flex', trailingslashit( get_template_directory_uri() ) . 'languages' );
+		load_theme_textdomain( 'superb', trailingslashit( get_template_directory_uri() ) . 'languages' );
 
 		// This theme styles the visual editor with editor-style.css to match the theme style.
 		add_editor_style();
@@ -76,7 +67,7 @@ if ( ! function_exists( 'flex_setup' ) ) {
               
 		// This theme uses wp_nav_menu() in one location
 		register_nav_menus( array(
-				'primary' => esc_html__( 'Primary Menu', 'flex' )
+				'primary' => esc_html__( 'Primary Menu', 'superb' )
 			) );
 
 		// This theme supports a variety of post formats
@@ -93,18 +84,18 @@ if ( ! function_exists( 'flex_setup' ) ) {
                
 	}
 }
-add_action( 'after_setup_theme', 'flex_setup' );
+add_action( 'after_setup_theme', 'superb_setup' );
 
 
 /**
  * Adds additional stylesheets to the TinyMCE editor if needed.
  *
- * @since Flex 1.2.5
+ * @since Superb 1.2.5
  *
  * @param string $mce_css CSS path to load in TinyMCE.
  * @return string The filtered CSS paths list.
  */
-function flex_mce_css( $mce_css ) {
+function superb_mce_css( $mce_css ) {
 	$fonts_url = 'http://fonts.googleapis.com/css?family=Ubuntu:400,300,700';
 
 	if ( empty( $fonts_url ) ) {
@@ -119,11 +110,11 @@ function flex_mce_css( $mce_css ) {
 
 	return $mce_css;
 }
-add_filter( 'mce_css', 'flex_mce_css' );
+add_filter( 'mce_css', 'superb_mce_css' );
 
 // Add specific CSS class by filter
-add_filter('body_class','flex_class_names');
-function flex_class_names($classes) {
+add_filter('body_class','superb_class_names');
+function superb_class_names($classes) {
     
         if ( is_front_page()) {
             $classes[] = 'flex-front-page';
@@ -137,15 +128,15 @@ function flex_class_names($classes) {
 /**
  * Register widgetized areas
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  *
  * @return void
  */
-function flex_widgets_init() {
+function superb_widgets_init() {
 	register_sidebar( array(
-			'name' => esc_html__( 'Main Sidebar', 'flex' ),
+			'name' => esc_html__( 'Main Sidebar', 'superb' ),
 			'id' => 'sidebar-main',
-			'description' => esc_html__( 'Appears in the sidebar on posts and pages except the optional Front Page template, which has its own widgets', 'flex' ),
+			'description' => esc_html__( 'Appears in the sidebar on posts and pages except the optional Front Page template, which has its own widgets', 'superb' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
@@ -153,9 +144,9 @@ function flex_widgets_init() {
 		) );
 
 	register_sidebar( array(
-			'name' => esc_html__( 'Footer #1', 'flex' ),
+			'name' => esc_html__( 'Footer #1', 'superb' ),
 			'id' => 'sidebar-footer1',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'flex' ),
+			'description' => esc_html__( 'Appears in the footer sidebar', 'superb' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
@@ -163,9 +154,9 @@ function flex_widgets_init() {
 		) );
 
 	register_sidebar( array(
-			'name' => esc_html__( 'Footer #2', 'flex' ),
+			'name' => esc_html__( 'Footer #2', 'superb' ),
 			'id' => 'sidebar-footer2',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'flex' ),
+			'description' => esc_html__( 'Appears in the footer sidebar', 'superb' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
@@ -173,9 +164,9 @@ function flex_widgets_init() {
 		) );
 
 	register_sidebar( array(
-			'name' => esc_html__( 'Footer #3', 'flex' ),
+			'name' => esc_html__( 'Footer #3', 'superb' ),
 			'id' => 'sidebar-footer3',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'flex' ),
+			'description' => esc_html__( 'Appears in the footer sidebar', 'superb' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
@@ -183,26 +174,26 @@ function flex_widgets_init() {
 		) );
 
 	register_sidebar( array(
-			'name' => esc_html__( 'Footer #4', 'flex' ),
+			'name' => esc_html__( 'Footer #4', 'superb' ),
 			'id' => 'sidebar-footer4',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'flex' ),
+			'description' => esc_html__( 'Appears in the footer sidebar', 'superb' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'
 		) );
 }
-add_action( 'widgets_init', 'flex_widgets_init' );
+add_action( 'widgets_init', 'superb_widgets_init' );
 
 
 /**
  * Enqueue scripts and styles
  *
- * @since Flex 1.0
+ * @since Superb 1.0
  *
  * @return void
  */
-function flex_scripts_styles() {
+function superb_scripts_styles() {
 
 	// Register and enqueue our icon font
 	// We're using the awesome Font Awesome icon font. http://fortawesome.github.io/Font-Awesome
@@ -243,7 +234,7 @@ function flex_scripts_styles() {
 	
          
 }
-add_action( 'wp_enqueue_scripts', 'flex_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'superb_scripts_styles' );
 
 
 /* Add theme extras */
