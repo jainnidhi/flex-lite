@@ -724,7 +724,7 @@ function superb_customize_register($wp_customize) {
 
     // Add new section for Contact settings
     $wp_customize->add_section('superb_contact_form_setting', array(
-        'title' => __('Contact Form', 'prism'),
+        'title' => __('Contact Form', 'superb'),
         'priority' => 67,
     ));
 

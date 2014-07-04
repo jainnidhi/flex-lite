@@ -113,7 +113,6 @@ Superb utilises the following awesomeness:
 
 Slider Image1 : slide1.jpg (http://unsplash.com/post/75618978410/download-by-paul-e-harrer) By Paul E. Harrer
 Slider Image2 : slide2.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller) By Drew Patrick Miller
-Slider Image3 : slide3.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)  By Alejandro Escamilla
 
 Featured Image 1: img4.jpg (http://unsplash.com/post/55904505955/download-by-art-wave-web-design) By Art Wave Web Design
 Featured Image 2: img5.jpg (http://unsplash.com/post/51493699530/download-by-alejandro-escamilla) By Alejandro Escamilla

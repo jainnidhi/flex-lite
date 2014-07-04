@@ -31,8 +31,8 @@ get_header();
                     <div class="flex-caption">
                         <div class="caption-content">
                         <div class="caption-inner">
-                        <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'superb') ?></a></h2>
-                        <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>
+                        <h2 class="slider-title"><a href="#"><?php esc_html_e('Build amazing websites with IdeaBox Themes', 'superb') ?></a></h2>
+                        <p><?php esc_html_e('Superb Lite is a perfect fit for your business website.', 'superb') ?> </p>
                         <a class="slider-button" href="<?php if ( get_theme_mod('slider_one_link_url') !='' ) { echo esc_url(get_theme_mod('slider_one_link_url')); } ?>">
                             <?php esc_html_e('Start Building Your Website Now', 'superb') ?>
                         </a>
@@ -47,8 +47,8 @@ get_header();
                 <div class="flex-caption">
                     <div class="caption-content">
                         <div class="caption-inner">
-                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'superb') ?></a></h2>
-                     <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'superb') ?> </p>
+                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Upgrade to Pro Version', 'superb') ?></a></h2>
+                     <p><?php esc_html_e('Get more amazing features with the pro version of Superb', 'superb') ?> </p>
                        <a class="slider-button" href="<?php if ( get_theme_mod('slider_two_link_url') !='' ) { echo esc_url(get_theme_mod('slider_two_link_url')); } ?>">
                             <?php esc_html_e('Start Building Your Website Now', 'superb') ?>
                         </a>
