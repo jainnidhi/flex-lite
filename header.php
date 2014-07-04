@@ -78,22 +78,22 @@ global $edd_options;
                             <div class="social-links">
                                 <ul>
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
-                                        <li class="flex-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
+                                        <li class="superb-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('twitter_link_url')) { ?>
-                                        <li class="flex-twitter"><a href="<?php echo  esc_url(get_theme_mod('twitter_link_url')); ?>"></a></li>
+                                        <li class="superb-twitter"><a href="<?php echo  esc_url(get_theme_mod('twitter_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('googleplus_link_url')) { ?>
-                                        <li class="flex-gplus"><a href="<?php echo esc_url(get_theme_mod('googleplus_link_url')); ?>"></a></li>
+                                        <li class="superb-gplus"><a href="<?php echo esc_url(get_theme_mod('googleplus_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if( get_theme_mod('pinterest_link_url')) { ?>
-                                        <li class="flex-pinterest"><a href="<?php echo esc_url(get_theme_mod('pinterest_link_url')); ?>"></a></li>
+                                        <li class="superb-pinterest"><a href="<?php echo esc_url(get_theme_mod('pinterest_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('github_link_url')) { ?>
-                                        <li class="flex-github"><a href="<?php echo esc_url(get_theme_mod('github_link_url')); ?>"></a></li>
+                                        <li class="superb-github"><a href="<?php echo esc_url(get_theme_mod('github_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('youtube_link_url')) { ?>
-                                        <li class="flex-youtube"><a href="<?php echo esc_url(get_theme_mod('youtube_link_url')); ?>"></a></li>
+                                        <li class="superb-youtube"><a href="<?php echo esc_url(get_theme_mod('youtube_link_url')); ?>"></a></li>
                                     <?php } ?>
                                 </ul>
                             </div>

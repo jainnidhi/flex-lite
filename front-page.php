@@ -28,7 +28,7 @@ get_header();
             if ( get_theme_mod('slider_one') =='' ) {  ?>
                 <li id="slider1">
                     <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg" alt=""/>
-                    <div class="flex-caption">
+                    <div class="superb-caption">
                         <div class="caption-content">
                         <div class="caption-inner">
                         <h2 class="slider-title"><a href="#"><?php esc_html_e('Build amazing websites with IdeaBox Themes', 'superb') ?></a></h2>
@@ -44,7 +44,7 @@ get_header();
              
             <li id="slider2"> 
                 <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" alt=""/>
-                <div class="flex-caption">
+                <div class="superb-caption">
                     <div class="caption-content">
                         <div class="caption-inner">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Upgrade to Pro Version', 'superb') ?></a></h2>
@@ -66,7 +66,7 @@ get_header();
                     <li id="slider1">
                     <img  src="<?php echo get_theme_mod('slider_one'); ?>" alt=""/>
                  <?php if ( get_theme_mod('slider_title_one') !='' || get_theme_mod('slider_one_description') !='' ) {  ?>
-                    <div class="flex-caption">
+                    <div class="superb-caption">
                         <div class="caption-content">
                             <div class="caption-inner">
                               <h2 class="slider-title"><?php echo esc_html(get_theme_mod('slider_title_one')); ?></h2>

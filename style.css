@@ -1,6 +1,6 @@
 /*
 Theme Name: Superb Lite
-Theme URI: http://ideaboxthemes.com/themes/flex-wordpress-theme/
+Theme URI: http://ideaboxthemes.com/themes/superb-lite-wordpress-theme/
 Author: IdeaBox Themes
 Author URI: http://ideaboxthemes.com/
 Description: Superb is a mobile responsive WordPress theme with beautiful design and easy to use Theme options. Superb is a perfect fit for all kind of business and personal websites. It comes with multiple color schemes, built in social icons, a well laid out static front page design and live customization with Theme Customizer. Superb has built in styling for WooCommerce so you can start selling your products easily. 
@@ -2580,509 +2580,146 @@ img#wpstats {
    Color Schemes
    ========================================================================== */
 /* ! Superb red	*/
-.flex-red .home-cta-area,
-.flex-red .feature-more-link,
-.flex-red #footercontainer,
-.flex-red .pagination .page-numbers:hover,
-.flex-red li span.current,
-.flex-red li a:hover.page-numbers,
-.flex-red button:hover,
-.flex-red input:hover[type="button"],
-.flex-red input:hover[type="reset"],
-.flex-red .entry-content .button:hover,
-.flex-red .page-links .page-numbers:hover,
-.flex-red .flex-caption .slider-button,
-.flex-red .home-featured .read-more,
-.flex-red .home-contact-form input[type="submit"],
-.flex-red input[type="submit"],
-.flex-red .main-navigation ul ul li
+.superb-red .home-cta-area,
+.superb-red .feature-more-link,
+.superb-red #footercontainer,
+.superb-red .pagination .page-numbers:hover,
+.superb-red li span.current,
+.superb-red li a:hover.page-numbers,
+.superb-red button:hover,
+.superb-red input:hover[type="button"],
+.superb-red input:hover[type="reset"],
+.superb-red .entry-content .button:hover,
+.superb-red .page-links .page-numbers:hover,
+.superb-red .superb-caption .slider-button,
+.superb-red .home-featured .read-more,
+.superb-red .home-contact-form input[type="submit"],
+.superb-red input[type="submit"],
+.superb-red .main-navigation ul ul li
 {
     background: #e55252;
 }
 
 
-.flex-red .nav-container
+.superb-red .nav-container
 {
     background:#cc4343;
 }
 
-.flex-red .contact-area:before{
+.superb-red .contact-area:before{
     border-top-color:#e55252;
 }
 
-.flex-red #reviewslider .slides img{
+.superb-red #reviewslider .slides img{
     border:3px solid #e55252;
 }
 
-.flex-red ::selection
+.superb-red ::selection
 {
     background:#e55252 !important;
     color:#fff;
 }
 
-.flex-red .main-navigation ul ul a
+.superb-red .main-navigation ul ul a
 {
     color:#fff;
 }
-.flex-red .site-title a,
-.flex-red .home-featured-post-title,
-.flex-red .sidebar a,
-.flex-red .entry-header .entry-title a,
-.flex-red .entry-header .entry-title,
-.flex-red .entry-header h1 a:visited,
-.flex-red .more-link,
-.flex-red label .required,
-.flex-red span.required,
-.flex-red .header-meta .fa,
-.flex-red .header-meta a:hover,
-.flex-red .nav-previous a:hover,
-.flex-red .nav-next a:hover,
-.flex-red .home-contact .fa,
-.flex-red .header-contact p:before,
-.flex-red .home-contact #address:before,
-.flex-red .home-contact #phone:before,
-.flex-red .home-contact #email:before,
-.flex-red .sidebar .widget li:before
+.superb-red .site-title a,
+.superb-red .home-featured-post-title,
+.superb-red .sidebar a,
+.superb-red .entry-header .entry-title a,
+.superb-red .entry-header .entry-title,
+.superb-red .entry-header h1 a:visited,
+.superb-red .more-link,
+.superb-red label .required,
+.superb-red span.required,
+.superb-red .header-meta .fa,
+.superb-red .header-meta a:hover,
+.superb-red .nav-previous a:hover,
+.superb-red .nav-next a:hover,
+.superb-red .home-contact .fa,
+.superb-red .header-contact p:before,
+.superb-red .home-contact #address:before,
+.superb-red .home-contact #phone:before,
+.superb-red .home-contact #email:before,
+.superb-red .sidebar .widget li:before
 {
     color:#e55252;
 }
 
-.flex-red .entry-header h1 a:hover{
+.superb-red .entry-header h1 a:hover{
     color:#111;
 }
 
 /* ! Superb green	*/
-.flex-green .home-cta-area,
-.flex-green .feature-more-link,
-.flex-green #footercontainer,
-.flex-green .pagination .page-numbers:hover,
-.flex-green li span.current,
-.flex-green li a:hover.page-numbers,
-.flex-green button:hover,
-.flex-green input:hover[type="button"],
-.flex-green input:hover[type="reset"],
-.flex-green input:hover[type="submit"],
-.flex-green .entry-content .button:hover,
-.flex-green .page-links .page-numbers:hover,
-.flex-green .flex-caption .slider-button,
-.flex-green .home-featured .read-more,
-.flex-green .home-contact-form input[type="submit"],
-.flex-green input[type="submit"],
-.flex-green .main-navigation ul ul li
+.superb-green .home-cta-area,
+.superb-green .feature-more-link,
+.superb-green #footercontainer,
+.superb-green .pagination .page-numbers:hover,
+.superb-green li span.current,
+.superb-green li a:hover.page-numbers,
+.superb-green button:hover,
+.superb-green input:hover[type="button"],
+.superb-green input:hover[type="reset"],
+.superb-green input:hover[type="submit"],
+.superb-green .entry-content .button:hover,
+.superb-green .page-links .page-numbers:hover,
+.superb-green .superb-caption .slider-button,
+.superb-green .home-featured .read-more,
+.superb-green .home-contact-form input[type="submit"],
+.superb-green input[type="submit"],
+.superb-green .main-navigation ul ul li
 {
     background: #3ac1c2;
 }
 
-.flex-green .main-navigation ul ul a
+.superb-green .main-navigation ul ul a
 {
     color:#fff;
 }
 
-.flex-green #reviewslider .slides img{
+.superb-green #reviewslider .slides img{
     border:3px solid #3ac1c2;
 }
 
-.flex-green ::selection
+.superb-green ::selection
 {
     background:#3ac1c2;
     color:#fff;
 }
 
-.flex-green .contact-area:before{
+.superb-green .contact-area:before{
     border-top-color:#3ac1c2;
 }
 
-.flex-green .nav-container
+.superb-green .nav-container
 {
     background:#299999;
 }
-.flex-green .site-title a,
-.flex-green .home-featured-post-title,
-.flex-green .sidebar a,
-.flex-green .entry-header .entry-title a,
-.flex-green .entry-header .entry-title,
-.flex-green .entry-header h1 a:visited,
-.flex-green .more-link,
-.flex-green label .required,
-.flex-green span.required,
-.flex-green .header-meta .fa,
-.flex-green .header-meta a:hover,
-.flex-green .nav-previous a:hover,
-.flex-green .nav-next a:hover,
-.flex-green .home-contact .fa,
-.flex-green .header-contact p:before,
-.flex-green .home-contact #address:before,
-.flex-green .home-contact #phone:before,
-.flex-green .home-contact #email:before,
-.flex-green .sidebar .widget li:before
+.superb-green .site-title a,
+.superb-green .home-featured-post-title,
+.superb-green .sidebar a,
+.superb-green .entry-header .entry-title a,
+.superb-green .entry-header .entry-title,
+.superb-green .entry-header h1 a:visited,
+.superb-green .more-link,
+.superb-green label .required,
+.superb-green span.required,
+.superb-green .header-meta .fa,
+.superb-green .header-meta a:hover,
+.superb-green .nav-previous a:hover,
+.superb-green .nav-next a:hover,
+.superb-green .home-contact .fa,
+.superb-green .header-contact p:before,
+.superb-green .home-contact #address:before,
+.superb-green .home-contact #phone:before,
+.superb-green .home-contact #email:before,
+.superb-green .sidebar .widget li:before
 {
     color:#3ac1c2;
 }
 
-.flex-green .entry-header h1 a:hover{
-    color:#111;
-}
-
-/* ! Superb pink	*/
-.flex-pink .home-cta-area,
-.flex-pink .feature-more-link,
-.flex-pink #footercontainer,
-.flex-pink .pagination .page-numbers:hover,
-.flex-pink li span.current,
-.flex-pink li a:hover.page-numbers,
-.flex-pink button:hover,
-.flex-pink input:hover[type="button"],
-.flex-pink input:hover[type="reset"],
-.flex-pink input:hover[type="submit"],
-.flex-pink .entry-content .button:hover,
-.flex-pink .page-links .page-numbers:hover,
-.flex-pink .flex-caption .slider-button,
-.flex-pink .home-featured .read-more,
-.flex-pink .home-contact-form input[type="submit"],
-.flex-pink input[type="submit"],
-.flex-pink .main-navigation ul ul li{
-    background: #ed409f;
-}
-
-.flex-pink .main-navigation ul ul a
-{
-    color:#fff;
-}
-
-.flex-pink ::selection
-{
-    background:#ed409f;
-    color:#fff;
-}
-
-.flex-pink .contact-area:before{
-    border-top-color:#ed409f;
-}
-
-.flex-pink #reviewslider .slides img{
-    border:3px solid #ed409f;
-}
-
-
-.flex-pink .nav-container
-{
-    background:#ce3386;
-}
-.flex-pink .site-title a,
-.flex-pink .home-featured-post-title,
-.flex-pink .sidebar a,
-.flex-pink .entry-header .entry-title a,
-.flex-pink .entry-header .entry-title,
-.flex-pink .entry-header h1 a:visited,
-.flex-pink .more-link,
-.flex-pink label .required,
-.flex-pink span.required,
-.flex-pink .header-meta .fa,
-.flex-pink .header-meta a:hover,
-.flex-pink .nav-previous a:hover,
-.flex-pink .nav-next a:hover,
-.flex-pink .home-contact .fa,
-.flex-pink .header-contact p:before,
-.flex-pink .home-contact #address:before,
-.flex-pink .home-contact #phone:before,
-.flex-pink .home-contact #email:before,
-.flex-pink .sidebar .widget li:before
-{
-    color:#ed409f;
-}
-
-.flex-pink .entry-header h1 a:hover{
-    color:#111;
-}
-
-
-/* ! Superb brown	*/
-.flex-brown .home-cta-area,
-.flex-brown .feature-more-link,
-.flex-brown #footercontainer,
-.flex-brown .pagination .page-numbers:hover,
-.flex-brown li span.current,
-.flex-brown li a:hover.page-numbers,
-.flex-brown button:hover,
-.flex-brown input:hover[type="button"],
-.flex-brown input:hover[type="reset"],
-.flex-brown input:hover[type="submit"],
-.flex-brown .entry-content .button:hover,
-.flex-brown .page-links .page-numbers:hover,
-.flex-brown .flex-caption .slider-button,
-.flex-brown .home-featured .read-more,
-.flex-brown .home-contact-form input[type="submit"],
-.flex-brown input[type="submit"],
-.flex-brown .main-navigation ul ul li
-{
-    background: #875608;
-}
-
-.flex-brown .main-navigation ul ul a
-{
-    color:#fff;
-}
-
-.flex-brown .contact-area:before{
-    border-top-color:#875608;
-}
-
-.flex-brown ::selection
-{
-    background:#875608;
-    color:#fff;
-}
-
-.flex-brown #reviewslider .slides img{
-    border:3px solid #876508;
-}
-
-
-.flex-brown .nav-container
-{
-    background:#704705;
-}
-.flex-brown .site-title a,
-.flex-brown .home-featured-post-title,
-.flex-brown .sidebar a,
-.flex-brown .entry-header .entry-title a,
-.flex-brown .entry-header .entry-title,
-.flex-brown .entry-header h1 a:visited,
-.flex-brown .more-link,
-.flex-brown label .required,
-.flex-brown span.required,
-.flex-brown .header-meta .fa,
-.flex-brown .header-meta a:hover,
-.flex-brown .nav-previous a:hover,
-.flex-brown .nav-next a:hover,
-.flex-brown .home-contact .fa,
-.flex-brown .header-contact p:before,
-.flex-brown .home-contact #address:before,
-.flex-brown .home-contact #phone:before,
-.flex-brown .home-contact #email:before,
-.flex-brown .sidebar .widget li:before
-{
-    color:#875608;
-}
-
-.flex-brown .entry-header h1 a:hover{
-    color:#111;
-}
-
-/* ! Superb purple	*/
-.flex-purple .home-cta-area,
-.flex-purple .feature-more-link,
-.flex-purple #footercontainer,
-.flex-purple .pagination .page-numbers:hover,
-.flex-purple li span.current,
-.flex-purple li a:hover.page-numbers,
-.flex-purple button:hover,
-.flex-purple input:hover[type="button"],
-.flex-purple input:hover[type="reset"],
-.flex-purple input:hover[type="submit"],
-.flex-purple .entry-content .button:hover,
-.flex-purple .page-links .page-numbers:hover,
-.flex-purple .flex-caption .slider-button,
-.flex-purple .home-featured .read-more,
-.flex-purple .home-contact-form input[type="submit"],
-.flex-purple input[type="submit"],
-.flex-purple .main-navigation ul ul li
-{
-    background: #a678d3;
-}
-
-
-.flex-purple .main-navigation ul ul a
-{
-    color:#fff;
-}
-
-.flex-purple .contact-area:before{
-    border-top-color:#a678d3;
-}
-
-.flex-purple ::selection
-{
-    background:#a678d3;
-    color:#fff;
-}
-
-.flex-purple #reviewslider .slides img{
-    border:3px solid #a678d3;
-}
-
-.flex-purple .nav-container
-{
-    background:#8837ce;
-}
-.flex-purple .site-title a,
-.flex-purple .home-featured-post-title,
-.flex-purple .sidebar a,
-.flex-purple .entry-header .entry-title a,
-.flex-purple .entry-header .entry-title,
-.flex-purple .entry-header h1 a:visited,
-.flex-purple .more-link,
-.flex-purple label .required,
-.flex-purple span.required,
-.flex-purple .header-meta .fa,
-.flex-purple .header-meta a:hover,
-.flex-purple .nav-previous a:hover,
-.flex-purple .nav-next a:hover,
-.flex-purple .home-contact .fa,
-.flex-purple .header-contact p:before,
-.flex-purple .home-contact #address:before,
-.flex-purple .home-contact #phone:before,
-.flex-purple .home-contact #email:before,
-.flex-purple .sidebar .widget li:before
-{
-    color:#a678d3;
-}
-
-.flex-purple .entry-header h1 a:hover{
-    color:#111;
-}
-
-/* ! Superb Orange */
-.flex-orange .home-cta-area,
-.flex-orange .feature-more-link,
-.flex-orange #footercontainer,
-.flex-orange .pagination .page-numbers:hover,
-.flex-orange li span.current,
-.flex-orange li a:hover.page-numbers,
-.flex-orange button:hover,
-.flex-orange input:hover[type="button"],
-.flex-orange input:hover[type="reset"],
-.flex-orange input:hover[type="submit"],
-.flex-orange .entry-content .button:hover,
-.flex-orange .page-links .page-numbers:hover,
-.flex-orange .flex-caption .slider-button,
-.flex-orange .home-featured .read-more,
-.flex-orange .home-contact-form input[type="submit"],
-.flex-orange input[type="submit"]
-.flex-orange .main-navigation ul ul li
-{
-    background: #fa7f53;
-}
-
-.flex-orange .main-navigation ul ul a
-{
-    color:#fff;
-}
-
-.flex-orange .contact-area:before{
-    border-top-color:#fa7f53;
-}
-
-.flex-orange #reviewslider .slides img{
-    border:3px solid #fa7f53;
-}
-.flex-orange ::selection
-{
-    background:#fa7f53;
-    color:#fff;
-}
-
-
-.flex-orange .nav-container
-{
-    background:#e06f4a;
-}
-.flex-orange .site-title a,
-.flex-orange .home-featured-post-title,
-.flex-orange .sidebar a,
-.flex-orange .entry-header .entry-title a,
-.flex-orange .entry-header .entry-title,
-.flex-orange .entry-header h1 a:visited,
-.flex-orange .more-link,
-.flex-orange label .required,
-.flex-orange span.required,
-.flex-orange .header-meta .fa,
-.flex-orange .header-meta a:hover,
-.flex-orange .nav-previous a:hover,
-.flex-orange .nav-next a:hover,
-.flex-orange .home-contact .fa,
-.flex-orange .header-contact p:before,
-.flex-orange .home-contact #address:before,
-.flex-orange .home-contact #phone:before,
-.flex-orange .home-contact #email:before,
-.flex-orange .sidebar .widget li:before
-{
-    color:#fa7f53;
-}
-
-.flex-orange .entry-header h1 a:hover{
-    color:#111;
-}
-
-/* ! Superb Yellow */
-.flex-yellow .home-cta-area,
-.flex-yellow .feature-more-link,
-.flex-yellow #footercontainer,
-.flex-yellow .pagination .page-numbers:hover,
-.flex-yellow li span.current,
-.flex-yellow li a:hover.page-numbers,
-.flex-yellow button:hover,
-.flex-yellow input:hover[type="button"],
-.flex-yellow input:hover[type="reset"],
-.flex-yellow input:hover[type="submit"],
-.flex-yellow .entry-content .button:hover,
-.flex-yellow .page-links .page-numbers:hover,
-.flex-yellow .flex-caption .slider-button,
-.flex-yellow .home-featured .read-more,
-.flex-yellow .home-contact-form input[type="submit"],
-.flex-yellow input[type="submit"]
-.flex-yellow .main-navigation ul ul li
-{
-    background: #d9ca39;
-}
-
-.flex-yellow .main-navigation ul ul a
-{
-    color:#fff;
-}
-
-.flex-yellow .contact-area:before{
-    border-top-color:#d9ca39;
-}
-
-.flex-yellow #reviewslider .slides img{
-    border:3px solid #d9ca39;
-}
-.flex-yellow ::selection
-{
-    background:#d9ca39;
-    color:#fff;
-}
-
-
-.flex-yellow .nav-container
-{
-    background:c9bb3a;
-}
-.flex-yellow .site-title a,
-.flex-yellow .home-featured-post-title,
-.flex-yellow .sidebar a,
-.flex-yellow .entry-header .entry-title a,
-.flex-yellow .entry-header .entry-title,
-.flex-yellow .entry-header h1 a:visited,
-.flex-yellow .more-link,
-.flex-yellow label .required,
-.flex-yellow span.required,
-.flex-yellow .header-meta .fa,
-.flex-yellow .header-meta a:hover,
-.flex-yellow .nav-previous a:hover,
-.flex-yellow .nav-next a:hover,
-.flex-yellow .home-contact .fa,
-.flex-yellow .header-contact p:before,
-.flex-yellow .home-contact #address:before,
-.flex-yellow .home-contact #phone:before,
-.flex-yellow .home-contact #email:before,
-.flex-yellow .sidebar .widget li:before
-{
-    color:#d9ca39;
-}
-
-.flex-yellow .entry-header h1 a:hover{
+.superb-green .entry-header h1 a:hover{
     color:#111;
 }
 

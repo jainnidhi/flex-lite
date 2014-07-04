@@ -1650,102 +1650,102 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
    Color Schemes
    ========================================================================== */
 /* ! Superb red	*/
-.flex-red .woocommerce-page #respond input#submit:hover,
-.flex-red .woocommerce button.button.alt:hover,
-.flex-red .woocommerce ul.products li.product a,
-.flex-red .woocommerce-page a.button:hover,
-.flex-red .woocommerce input.button.alt:hover,
-.flex-red .woocommerce ul.products li.product .onsale,
-.flex-red .woocommerce #review_form #respond .form-submit input:hover,
-.flex-red .onsale,
-.flex-red ins,
-.flex-red input:hover[type="submit"],
-.flex-red .button:hover{
+.superb-red .woocommerce-page #respond input#submit:hover,
+.superb-red .woocommerce button.button.alt:hover,
+.superb-red .woocommerce ul.products li.product a,
+.superb-red .woocommerce-page a.button:hover,
+.superb-red .woocommerce input.button.alt:hover,
+.superb-red .woocommerce ul.products li.product .onsale,
+.superb-red .woocommerce #review_form #respond .form-submit input:hover,
+.superb-red .onsale,
+.superb-red ins,
+.superb-red input:hover[type="submit"],
+.superb-red .button:hover{
     background:#e55252 !important;
 }
 
-.flex-red .woocommerce-message,
-.flex-red .woocommerce-info
+.superb-red .woocommerce-message,
+.superb-red .woocommerce-info
 {
     border-top: 3px solid #e55252 !important;
 }
 
-.flex-red .woocommerce button.button.alt:hover{
+.superb-red .woocommerce button.button.alt:hover{
     border:3px solid #e55252;
 }
-.flex-red .star-rating span:before,
-.flex-red .woocommerce-message:before,
-.flex-red .woocommerce-info:before,
-.flex-red .site-header .cart-contents:after,
-.flex-red .fa-shopping-cart:before
+.superb-red .star-rating span:before,
+.superb-red .woocommerce-message:before,
+.superb-red .woocommerce-info:before,
+.superb-red .site-header .cart-contents:after,
+.superb-red .fa-shopping-cart:before
 {
     color:#e55252;
 }
 
 /* ! Superb green */
 
-.flex-green .woocommerce-page #respond input#submit:hover,
-.flex-green .woocommerce button.button.alt:hover,
-.flex-green .woocommerce ul.products li.product a,
-.flex-green .woocommerce-page a.button:hover,
-.flex-green .woocommerce input.button.alt:hover,
-.flex-green .woocommerce ul.products li.product .onsale,
-.flex-green .woocommerce #review_form #respond .form-submit input:hover,
-.flex-green .onsale,
-.flex-green ins,
-.flex-green input:hover[type="submit"],
-.flex-green .button:hover
+.superb-green .woocommerce-page #respond input#submit:hover,
+.superb-green .woocommerce button.button.alt:hover,
+.superb-green .woocommerce ul.products li.product a,
+.superb-green .woocommerce-page a.button:hover,
+.superb-green .woocommerce input.button.alt:hover,
+.superb-green .woocommerce ul.products li.product .onsale,
+.superb-green .woocommerce #review_form #respond .form-submit input:hover,
+.superb-green .onsale,
+.superb-green ins,
+.superb-green input:hover[type="submit"],
+.superb-green .button:hover
 {
     background: #3ac1c2 !important;
 }
 
-.flex-green .woocommerce button.button.alt:hover{
+.superb-green .woocommerce button.button.alt:hover{
     border:3px solid #3ac1c2;
 }
-.flex-green .woocommerce-message,
-.flex-green .woocommerce-info{
+.superb-green .woocommerce-message,
+.superb-green .woocommerce-info{
     border-top: 3px solid #3ac1c2;
 }
 
-.flex-green .star-rating span:before,
-.flex-green .woocommerce-message:before,
-.flex-green .woocommerce-info:before,
-.flex-green .site-header .cart-contents:after,
-.flex-green .fa-shopping-cart:before
+.superb-green .star-rating span:before,
+.superb-green .woocommerce-message:before,
+.superb-green .woocommerce-info:before,
+.superb-green .site-header .cart-contents:after,
+.superb-green .fa-shopping-cart:before
 {
     color:#3ac1c2;
 }
 
 /* ! Superb pink	*/
 
-.flex-pink .woocommerce-page #respond input#submit:hover,
-.flex-pink .woocommerce button.button.alt:hover,
-.flex-pink .woocommerce ul.products li.product a,
-.flex-pink .woocommerce-page a.button:hover,
-.flex-pink .woocommerce input.button.alt:hover,
-.flex-pink .woocommerce ul.products li.product .onsale,
-.flex-pink .woocommerce #review_form #respond .form-submit input:hover,
-.flex-pink .onsale,
-.flex-pink ins,
-.flex-pink input:hover[type="submit"],
-.flex-pink .button:hover
+.superb-pink .woocommerce-page #respond input#submit:hover,
+.superb-pink .woocommerce button.button.alt:hover,
+.superb-pink .woocommerce ul.products li.product a,
+.superb-pink .woocommerce-page a.button:hover,
+.superb-pink .woocommerce input.button.alt:hover,
+.superb-pink .woocommerce ul.products li.product .onsale,
+.superb-pink .woocommerce #review_form #respond .form-submit input:hover,
+.superb-pink .onsale,
+.superb-pink ins,
+.superb-pink input:hover[type="submit"],
+.superb-pink .button:hover
 {
     background: #ed409f !important;
 }
 
-.flex-pink .woocommerce button.button.alt:hover{
+.superb-pink .woocommerce button.button.alt:hover{
     border:3px solid #ed409f;
 }
-.flex-pink  .woocommerce-message,
-.flex-pink  .woocommerce-info{
+.superb-pink  .woocommerce-message,
+.superb-pink  .woocommerce-info{
     border-top: 3px solid #ed409f;
 }
 
-.flex-pink .star-rating span:before,
-.flex-pink .woocommerce-message:before,
-.flex-pink .woocommerce-info:before,
-.flex-pink .site-header .cart-contents:after,
-.flex-pink .fa-shopping-cart:before
+.superb-pink .star-rating span:before,
+.superb-pink .woocommerce-message:before,
+.superb-pink .woocommerce-info:before,
+.superb-pink .site-header .cart-contents:after,
+.superb-pink .fa-shopping-cart:before
 {
     color:#ed409f;
 }
@@ -1753,140 +1753,140 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 
 /* ! Superb brown */
 
-.flex-brown .woocommerce-page #respond input#submit:hover,
-.flex-brown .woocommerce button.button.alt:hover,
-.flex-brown .woocommerce ul.products li.product a,
-.flex-brown .woocommerce-page a.button:hover,
-.flex-brown .woocommerce input.button.alt:hover,
-.flex-brown .woocommerce ul.products li.product .onsale,
-.flex-brown .woocommerce #review_form #respond .form-submit input:hover,
-.flex-brown .onsale,
-.flex-brown ins,
-.flex-brown input:hover[type="submit"],
-.flex-brown .button:hover
+.superb-brown .woocommerce-page #respond input#submit:hover,
+.superb-brown .woocommerce button.button.alt:hover,
+.superb-brown .woocommerce ul.products li.product a,
+.superb-brown .woocommerce-page a.button:hover,
+.superb-brown .woocommerce input.button.alt:hover,
+.superb-brown .woocommerce ul.products li.product .onsale,
+.superb-brown .woocommerce #review_form #respond .form-submit input:hover,
+.superb-brown .onsale,
+.superb-brown ins,
+.superb-brown input:hover[type="submit"],
+.superb-brown .button:hover
 {
     background: #875608 !important;
 }
 
-.flex-brown .woocommerce-message,
-.flex-brown .woocommerce-info{
+.superb-brown .woocommerce-message,
+.superb-brown .woocommerce-info{
     border-top: 3px solid #875608 !important;
 }
-.flex-brown .woocommerce button.button.alt:hover{
+.superb-brown .woocommerce button.button.alt:hover{
     border:3px solid #875608;
 }
 
-.flex-brown .star-rating span:before,
-.flex-brown .woocommerce-message:before,
-.flex-brown .woocommerce-info:before,
-.flex-brown .site-header .cart-contents:after,
-.flex-brown .fa-shopping-cart:before
+.superb-brown .star-rating span:before,
+.superb-brown .woocommerce-message:before,
+.superb-brown .woocommerce-info:before,
+.superb-brown .site-header .cart-contents:after,
+.superb-brown .fa-shopping-cart:before
 {
     color:#875608;
 }
 
 /* ! Superb purple */
 
-.flex-purple .woocommerce-page #respond input#submit:hover,
-.flex-purple .woocommerce button.button.alt:hover,
-.flex-purple .woocommerce ul.products li.product a,
-.flex-purple .woocommerce-page a.button:hover,
-.flex-purple .woocommerce input.button.alt:hover,
-.flex-purple .woocommerce ul.products li.product .onsale,
-.flex-purple .woocommerce #review_form #respond .form-submit input:hover,
-.flex-purple .onsale,
-.flex-purple ins,
-.flex-purple input:hover[type="submit"],
-.flex-purple .button:hover
+.superb-purple .woocommerce-page #respond input#submit:hover,
+.superb-purple .woocommerce button.button.alt:hover,
+.superb-purple .woocommerce ul.products li.product a,
+.superb-purple .woocommerce-page a.button:hover,
+.superb-purple .woocommerce input.button.alt:hover,
+.superb-purple .woocommerce ul.products li.product .onsale,
+.superb-purple .woocommerce #review_form #respond .form-submit input:hover,
+.superb-purple .onsale,
+.superb-purple ins,
+.superb-purple input:hover[type="submit"],
+.superb-purple .button:hover
 {
     background: #a678d3 !important;
 }
 
-.flex-purple .woocommerce button.button.alt:hover{
+.superb-purple .woocommerce button.button.alt:hover{
     border:3px solid #a678d3;
 }
 
-.flex-purple .woocommerce-message,
-.flex-purple .woocommerce-info{
+.superb-purple .woocommerce-message,
+.superb-purple .woocommerce-info{
     border-top: 3px solid #a678d3 !important;
 }
 
-.flex-purple .star-rating span:before,
-.flex-purple .woocommerce-message:before,
-.flex-purple .woocommerce-info:before,
-.flex-purple .site-header .cart-contents:after,
-.flex-purple .fa-shopping-cart:before
+.superb-purple .star-rating span:before,
+.superb-purple .woocommerce-message:before,
+.superb-purple .woocommerce-info:before,
+.superb-purple .site-header .cart-contents:after,
+.superb-purple .fa-shopping-cart:before
 {
     color:#a678d3;
 }
 
 /* ! Superb orange */
 
-.flex-orange .woocommerce-page #respond input#submit:hover,
-.flex-orange .woocommerce button.button.alt:hover,
-.flex-orange .woocommerce ul.products li.product a,
-.flex-orange .woocommerce-page a.button:hover,
-.flex-orange .woocommerce input.button.alt:hover,
-.flex-orange .woocommerce ul.products li.product .onsale,
-.flex-orange .woocommerce #review_form #respond .form-submit input:hover,
-.flex-orange .onsale,
-.flex-orange ins,
-.flex-orange input:hover[type="submit"],
-.flex-orange .button:hover
+.superb-orange .woocommerce-page #respond input#submit:hover,
+.superb-orange .woocommerce button.button.alt:hover,
+.superb-orange .woocommerce ul.products li.product a,
+.superb-orange .woocommerce-page a.button:hover,
+.superb-orange .woocommerce input.button.alt:hover,
+.superb-orange .woocommerce ul.products li.product .onsale,
+.superb-orange .woocommerce #review_form #respond .form-submit input:hover,
+.superb-orange .onsale,
+.superb-orange ins,
+.superb-orange input:hover[type="submit"],
+.superb-orange .button:hover
 
 {
     background: #fa7f53 !important;
 }
 
-.flex-orange .woocommerce button.button.alt:hover{
+.superb-orange .woocommerce button.button.alt:hover{
     border:3px solid #fa7f53;
 }
-.flex-orange .woocommerce-message,
-.flex-orange .woocommerce-info{
+.superb-orange .woocommerce-message,
+.superb-orange .woocommerce-info{
     border-top: 3px solid #fa7f53 !important;
 }
 
-.flex-orange .star-rating span:before,
-.flex-orange .woocommerce-message:before,
-.flex-orange .woocommerce-info:before,
-.flex-orange .site-header .cart-contents:after,
-.flex-orange .fa-shopping-cart:before
+.superb-orange .star-rating span:before,
+.superb-orange .woocommerce-message:before,
+.superb-orange .woocommerce-info:before,
+.superb-orange .site-header .cart-contents:after,
+.superb-orange .fa-shopping-cart:before
 {
     color:#fa7f53;
 }
 
 /* ! Superb Yellow */
 
-.flex-yellow .woocommerce-page #respond input#submit:hover,
-.flex-yellow .woocommerce button.button.alt:hover,
-.flex-yellow .woocommerce ul.products li.product a,
-.flex-yellow .woocommerce-page a.button:hover,
-.flex-yellow .woocommerce input.button.alt:hover,
-.flex-yellow .woocommerce ul.products li.product .onsale,
-.flex-yellow .woocommerce #review_form #respond .form-submit input:hover,
-.flex-yellow .onsale,
-.flex-yellow ins,
-.flex-yellow input:hover[type="submit"],
-.flex-yellow .button:hover
+.superb-yellow .woocommerce-page #respond input#submit:hover,
+.superb-yellow .woocommerce button.button.alt:hover,
+.superb-yellow .woocommerce ul.products li.product a,
+.superb-yellow .woocommerce-page a.button:hover,
+.superb-yellow .woocommerce input.button.alt:hover,
+.superb-yellow .woocommerce ul.products li.product .onsale,
+.superb-yellow .woocommerce #review_form #respond .form-submit input:hover,
+.superb-yellow .onsale,
+.superb-yellow ins,
+.superb-yellow input:hover[type="submit"],
+.superb-yellow .button:hover
 
 {
     background: #d9ca39 !important;
 }
 
-.flex-yellow .woocommerce button.button.alt:hover{
+.superb-yellow .woocommerce button.button.alt:hover{
     border:3px solid #d9ca39;
 }
 
-.flex-yellow .woocommerce-message,
-.flex-yellow .woocommerce-info{
+.superb-yellow .woocommerce-message,
+.superb-yellow .woocommerce-info{
     border-top: 3px solid #d9ca39 !important;
 }
 
-.flex-yellow .star-rating span:before,
-.flex-yellow .woocommerce-message:before,
-.flex-yellow .woocommerce-info:before,
-.flex-yellow .site-header .cart-contents:after,
-.flex-yellow .fa-shopping-cart:before
+.superb-yellow .star-rating span:before,
+.superb-yellow .woocommerce-message:before,
+.superb-yellow .woocommerce-info:before,
+.superb-yellow .site-header .cart-contents:after,
+.superb-yellow .fa-shopping-cart:before
 {
     color:#d9ca39;
 }

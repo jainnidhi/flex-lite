@@ -422,7 +422,7 @@ function superb_body_classes($classes) {
     
     if(get_theme_mod('superb_color_scheme')) {
         $slug = strtolower(get_theme_mod('superb_color_scheme'));
-        $classes[] = 'flex-' . $slug;
+        $classes[] = 'superb-' . $slug;
         
     }
     

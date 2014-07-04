@@ -30,8 +30,8 @@ function superb_custom_header_setup() {
 		'width'                  => 800,
 
 		// Support Superbible height and width.
-		'flex-height'            => true,
-		'flex-width'             => true,
+		'superb-height'            => true,
+		'superb-width'             => true,
 
 		// Random image rotation off by default.
 		'random-default'         => false,

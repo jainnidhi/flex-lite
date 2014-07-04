@@ -117,7 +117,7 @@ add_filter('body_class','superb_class_names');
 function superb_class_names($classes) {
     
         if ( is_front_page()) {
-            $classes[] = 'flex-front-page';
+            $classes[] = 'superb-front-page';
         }
         
 	// return the $classes array
@@ -200,18 +200,18 @@ function superb_scripts_styles() {
 	wp_enqueue_style( 'fontawesome', trailingslashit( get_template_directory_uri() ) . 'assets/css/font-awesome.min.css' , array(), '4.0.3', 'all' );
         
          if ( class_exists('woocommerce') ) {
-        wp_enqueue_style( 'flex-woocommerce', trailingslashit( get_template_directory_uri() ) . 'assets/css/flex-woocommerce.css' , array(), '1.0', 'all' );
+        wp_enqueue_style( 'superb-woocommerce', trailingslashit( get_template_directory_uri() ) . 'assets/css/superb-woocommerce.css' , array(), '1.0', 'all' );
          }
          
         wp_enqueue_style( 'flexslider', trailingslashit( get_template_directory_uri() ) . 'assets/css/flexslider.css' , array(), '1.0', 'all' );
         
         wp_enqueue_script('jquery'); 
         wp_enqueue_script( 'jquery-min', '//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js' );
-        wp_enqueue_script('flex-slider', get_template_directory_uri() . '/assets/js/jquery.flexslider.js', array('jquery'));
+        wp_enqueue_script('superb-slider', get_template_directory_uri() . '/assets/js/jquery.flexslider.js', array('jquery'));
 	
 	$fonts_url = 'http://fonts.googleapis.com/css?family=Ubuntu:400,300,700';
 	if ( !empty( $fonts_url ) ) {
-		wp_enqueue_style( 'flex-fonts', esc_url_raw( $fonts_url ), array(), null );
+		wp_enqueue_style( 'superb-fonts', esc_url_raw( $fonts_url ), array(), null );
 	}
 
 	// Enqueue the default WordPress stylesheet
@@ -230,7 +230,7 @@ function superb_scripts_styles() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'flex-slicknav', get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js' );
+	wp_enqueue_script( 'superb-slicknav', get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js' );
 	
          
 }

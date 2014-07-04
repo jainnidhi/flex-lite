@@ -22,32 +22,32 @@
 	} );
         wp.customize( 'facebook_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.flex-fb a' ).attr('href', to );
+			$( '.superb-fb a' ).attr('href', to );
 		} );
 	} );
        wp.customize( 'twitter_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .flex-twitter a' ).attr('href', to );
+			$( '.social-links .superb-twitter a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'googleplus_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .flex-gplus a' ).attr('href', to );
+			$( '.social-links .superb-gplus a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'pinterest_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .flex-pinterest a' ).attr('href', to );
+			$( '.social-links .superb-pinterest a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'github_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .flex-github a' ).attr('href', to );
+			$( '.social-links .superb-github a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'youtube_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .flex-youtube a' ).attr('href', to );
+			$( '.social-links .superb-youtube a' ).attr('href', to );
 		} );
 	} );
          wp.customize( 'slider_one', function( value ) {
@@ -73,56 +73,6 @@
          wp.customize( 'slider_one_link_text', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider1 .flex-caption .slider-button' ).text( to );
-		} );
-	} );
-         wp.customize( 'slider_two', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider2 img' ).attr('src', to );
-		} );
-	} );
-         wp.customize( 'slider_title_two', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider2 .flex-caption h2' ).text( to );
-		} );
-	} );
-         wp.customize( 'slider_two_description', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider2 .flex-caption p' ).text( to );
-		} );
-	} );
-        wp.customize( 'slider_two_link_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider2 .flex-caption .slider-button' ).attr('href', to );
-		} );
-	} );
-         wp.customize( 'slider_two_link_text', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider2 .flex-caption .slider-button' ).text( to );
-		} );
-	} );
-         wp.customize( 'slider_three', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider3 img' ).attr('src', to );
-		} );
-	} );
-         wp.customize( 'slider_title_three', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider3 .flex-caption h2' ).text( to );
-		} );
-	} );
-         wp.customize( 'slider_three_description', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider3 .flex-caption p' ).text( to );
-		} );
-	} );
-        wp.customize( 'slider_three_link_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider3 .flex-caption .slider-button' ).attr('href', to );
-		} );
-	} );
-         wp.customize( 'slider_three_link_text', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider3 .flex-caption .slider-button' ).text( to );
 		} );
 	} );
         
