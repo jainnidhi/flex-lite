@@ -610,6 +610,39 @@ function superb_customize_register($wp_customize) {
         'priority' => 30,
     )));
 
+    
+    // Add new section for Home Video settings
+    $wp_customize->add_section('video_setting', array(
+        'title' => __('Home video', 'flex'),
+        'priority' => 60,
+    ));
+
+
+    $wp_customize->add_setting('home_video', array('default' => '',
+        'sanitize_js_callback' => 'superb_sanitize_escaping',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control(new superb_customize_textarea_control($wp_customize, 'home_video', array(
+        'label' => __('Video Code', 'flex'),
+        'section' => 'video_setting',
+        'settings' => 'home_video',
+        'priority' => 3,
+    )));
+
+    // video Title
+    $wp_customize->add_setting('video_title', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('video_title', array(
+        'label' => __('Video Title', 'flex'),
+        'section' => 'video_setting',
+        'settings' => 'video_title',
+        'priority' => 4,
+    ));
+
 
     // Add new section for Home CTA settings
     $wp_customize->add_section('home_cta_setting', array(
