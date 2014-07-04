@@ -157,8 +157,18 @@ Flex utilises the following awesomeness:
 [Normalize.css](https://github.com/necolas/normalize.css), which is licensed under the MIT license
 [jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation) which is dual licensed under the MIT license and GPL licenses
 [Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
+[Flexslider] (https://github.com/woothemes/FlexSlider), by WooThemes, licensed under GPLv2 
 [Ubuntu font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
-[Montserrat font](http://www.google.com/fonts/specimen/Montserrat), which is licensed under SIL Open Font License 1.1
+[Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
+
+
+Slider Image1 : slide1.jpg (http://unsplash.com/post/75618978410/download-by-paul-e-harrer) By Paul E. Harrer
+Slider Image2 : slide2.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller) By Drew Patrick Miller
+Slider Image3 : slide3.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)  By Alejandro Escamilla
+
+Featured Image 1: img4.jpg (http://unsplash.com/post/55904505955/download-by-art-wave-web-design) By Art Wave Web Design
+Featured Image 2: img5.jpg (http://unsplash.com/post/51493699530/download-by-alejandro-escamilla) By Alejandro Escamilla
+Featured Image 3: img6.jpg (http://unsplash.com/post/59630943411/download-caroline-gutman) Caroline Gutman
 
 = 1.0 =
 - Initial version

@@ -27,7 +27,7 @@ get_header();
             // if there are no slides by user then load default slides. 
             if ( get_theme_mod('slider_one') =='' ) {  ?>
                 <li id="slider1">
-                    <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider1.jpg" alt=""/>
+                    <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg" alt=""/>
                     <div class="flex-caption">
                         <div class="caption-content">
                         <div class="caption-inner">
@@ -43,7 +43,7 @@ get_header();
             
              
             <li id="slider2"> 
-                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider2.jpg" alt=""/>
+                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="caption-content">
                         <div class="caption-inner">
@@ -58,7 +58,7 @@ get_header();
             </li>
             
             <li id="slider3">
-                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider3.jpg" alt=""/>
+                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide3.jpg" alt=""/>
                <div class="flex-caption">
                    <div class="caption-content">
                        <div class="caption-inner">
@@ -164,7 +164,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_one') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_one'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" /></div>
                      <?php } ?>
 
 
@@ -189,7 +189,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_two') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_two'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img5.jpg" /></div>
                      <?php } ?>
 
 
@@ -215,7 +215,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_three') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_three'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img3.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img6.jpg" /></div>
                      <?php } ?>
 
 
