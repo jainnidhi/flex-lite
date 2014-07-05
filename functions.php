@@ -230,7 +230,7 @@ function superb_scripts_styles() {
 	}
 
 	wp_enqueue_script( 'superb-slicknav', get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js' );
-	
+	wp_enqueue_script('superb-custom-scripts', get_template_directory_uri() . '/assets/js/custom-scripts.js', array(), '1.0', 'all', false);
          
 }
 add_action( 'wp_enqueue_scripts', 'superb_scripts_styles' );
