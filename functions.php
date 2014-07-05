@@ -206,7 +206,6 @@ function superb_scripts_styles() {
         wp_enqueue_style( 'flexslider', trailingslashit( get_template_directory_uri() ) . 'assets/css/flexslider.css' , array(), '1.0', 'all' );
         
         wp_enqueue_script('jquery'); 
-        wp_enqueue_script( 'jquery-min', '//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js' );
         wp_enqueue_script('superb-slider', get_template_directory_uri() . '/assets/js/jquery.flexslider.js', array('jquery'));
 	
 	$fonts_url = 'http://fonts.googleapis.com/css?family=Ubuntu:400,300,700';
