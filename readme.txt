@@ -4,12 +4,22 @@ Author URI: http://ideaboxthemes.com
 Tags: blue, orange, brown, red, pink, purple, yellow, green, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.6
 Tested up to: 3.9
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Superb Lite WordPress theme, Copyright (C) 2014 Ideabox Creations
-Superb Lite WordPress theme is licensed under the GPL. 
+Superb Lite WordPress Theme, Copyright (C) 2014 IdeaBox Themes
+Superb Lite is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
 Superb Lite is a mobile responsive WordPress theme with beautiful design and easy to use Theme options. Superb is a perfect fit for all kind of business and personal websites. It comes with multiple color schemes, built in social icons, a well laid out static front page design and live customization with Theme Customizer. Superb has built in styling for WooCommerce so you can start selling your products easily. 
 
@@ -98,18 +108,33 @@ This program is free software; you can redistribute it and/or modify it under th
 Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
 
-== Credits ==
+== License ==
 
-Superb utilises the following awesomeness:
+Superb Lite WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.
+Superb Lite WordPress Theme is distributed under the terms of the GNU GPL
 
-[Modernizr](http://modernizr.com), which is licensed under the MIT license
-[Normalize.css](https://github.com/necolas/normalize.css), which is licensed under the MIT license
-[jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation) which is dual licensed under the MIT license and GPL licenses
+Superb Lite utilises the following awesomeness:
+
+Modernizr is licensed under the MIT license
+Source: http://modernizr.com
+
+Normalize.css Copyright Nicolas Gallagher 
+Normalize.css is licensed under the MIT license
+Source: https://github.com/necolas/normalize.css
+
+jQuery Validation Copyright 2013 Jorn Zaefferer 
+jQuery Validation is licensed under the MIT license
+Source: http://bassistance.de/jquery-plugins/jquery-plugin-validation
+
 [Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
 [Superbslider] (https://github.com/woothemes/SuperbSlider), by WooThemes, licensed under GPLv2 
 [Ubuntu font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
 [Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
 
+== Credits ==
+
+Superb Lite uses the following images licensed under Creative Commons public domain deed CC0
+http://creativecommons.org/publicdomain/zero/1.0/
 
 Slider Image1 : slide1.jpg (http://unsplash.com/post/75618978410/download-by-paul-e-harrer) By Paul E. Harrer
 Slider Image2 : slide2.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller) By Drew Patrick Miller
